@@ -407,6 +407,7 @@ a:focus {
 	padding: 11px;
 	display: table;
 	margin-bottom: 21px;
+	margin-top: 20px;
  }
  .order-text{
  	  float: left;
@@ -414,4 +415,32 @@ a:focus {
     border: none;
     border-bottom: 1px solid #C4C4C4;
     margin-bottom: 22px;
+ }
+ .fl-l{
+ 	float: left;
+ 	margin-right: 10px;
+ }
+ .fl-r{
+ 	float: right;
+ 	margin-left: 10px;
+ }
+ .confe-txt{
+ 	color: white;
+  position: absolute;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  padding: 18px 32px;
+  width: 38.3%;
+  transform: translate(0px, -213px);
+ }
+ .confe-bt{
+ 	width: auto;
+  float: right;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 7px 26px;
+  text-align: center;
+  margin-top: 30px;
  }
