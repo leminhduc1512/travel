@@ -9,169 +9,278 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 	<title>Hotel|Order</title>
 </head>
+<header class="header">
+	<div class="header__menu">
+		<div class="header-left">
+			<div class="od-logo">
+				<a href="index.html"><img src="../img/hotel/order/logo.png"></a>
+			</div>
+		</div>
+		<div class="h">
+			<div class="header-right h">
+		 		<div class="contact-h">
+					<ul class="od">
+						<li><a href="#">
+								<div class="fl-l">
+									<img src="../img/icon/icon-call.svg">
+								</div>
+								<span>(+84) 236 123 4567</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
 <body>
-	<div class="wrapper" style="background: rgba(21, 104, 34, 0.05);">
-		<div style="background-color: #FFFFFF; display:flex;">
-			<div class="header-left" style="margin-left:100px;">
-			<div >
-				<a href="index.html"><img src="../img/logo.png"></a>
-			</div>
-		</div>
-		<div class="header-right" style="margin-right:100px;width: calc(100% - 302px);">
-			<div  class="contact-h" >
-					<a href="#"><p style="color: #135997;"><img src="../img/icon/icon-call.svg"><span>(+84) 236 123 4567</span></p></a>
-			</div>
-		</div>
-		</div>
-		
+	<div class="wrapper-od">
 		<section class="section">
-			<div style="width:65%;float: left;">
-				<div class="border-none" style="width:100%;">
-					<div style="float: left;"><img src="../img/hotel/order/od1.png"></div>
-					<div style="float:right">
+			<div class="six fl">
+				<div class="border-none">
+					<div class="fl"><img src="../img/hotel/order/od1.png"></div>
+					<div class="order-infor-text fl">
 						<h5>InterContinental Danang Sun Peninsula Resort</h5>
-						<label class="bb-star">
+						<div class="star">
+							<label class="bb-star">
 			                <i class="c-star fa fa-star" rel="5"></i>
 			                <i class="c-star fa fa-star" rel="4"></i>
 			                <i class="c-star fa fa-star" rel="3"></i>
 			                <i class="c-star fa fa-star" rel="2"></i>
 			                <i class="c-star fa fa-star" rel="1"></i>
-	            		</label>
-	            		<div>
-	            			<img style="float:left" src="../img/hotel/search/location.png">
-	            			<p>105 Võ Nguyên Giáp, Khuê Mỹ, Ngũ Hành Sơn, Đà Nẵng</p>
+	            			</label>
+						</div>
+	            		<div class="adress">
+	            			<img src="../img/hotel/detail/location.png">
+	            			<span>105 Võ Nguyên Giáp, Khuê Mỹ, Ngũ Hành Sơn, Đà Nẵng</span>
 	            		</div>
-	            		<div class="ft-tx" style="width:150px">
-	            			<p>Nhận phòng </p>
-	            			<form>
-	            				<input style="width: 148px" type="date"  name="">
-	            			</form>
+	            		<div class="order-date">
+		            		<div class="fl">
+		            			<label class="date">
+		            				<span>Nhận phòng </span><br>
+	            					<div class="fl">
+	            						<img src="../img/hotel/order/date.png">
+	            						<input placeholder="Từ ngày" name="">
+		            				</div>
+		            			</label>
+		            		</div>
+
+		            		<div class="fl">
+		            			<label class="date">
+		            				<span>Trả phòng</span><br>
+		            				<div class="fl">
+		            					<img src="../img/hotel/order/date.png">
+		            					<input placeholder="Đến ngày" name="">
+		            				</div>		            				
+		            			</label>
+		            		</div>
+		            		<div class="fl">
+		            			<label class="date">
+		            				<span>Số đêm</span>
+		            				<p>1</p>
+		            			</label>
+		            		</div>
 	            		</div>
-	            		<div class="ft-tx" style="width:150px">
-	            			<p>Trả phòng</p>
-	            			<form>
-	            				<input style="width: 148px" type="date" name="">
-	            			</form>
-	            		</div>
-	            		<div class="ft-tx" style="width:150px">
-	            			<p>Số đêm</p>
-	            			<label>1</label>
+	            		<div class="guest">
+	            			<span>Khách và Phòng</span>
+	            			<div class="order-amount">
+	            				<div class="order-amount-infor">
+	            					<img src="../img/hotel/detail/users.png">
+	            					<label>2 Người lớn, </label>
+	            				</div>
+	            				<div class="order-amount-infor">
+	            					<img src="../img/hotel/order/baby.png">
+	            					<label>0 Trẻ em,</label>
+	            				</div>
+	            				<div class="order-amount-infor">
+	            					<img src="../img/hotel/order/room.png">
+	            					<label>1 phòng</label>
+	            				</div>
+	            			</div>
 	            		</div>
 					</div>
 				</div>
 				
-				<div class="border-none" style="width: 100%"> 
-					<div class="title">Giới thiệu tổng quan</div>
-					<form>
-						<input class="order-text" style="width:100%" type="text" name="" placeholder="Họ và tên*">
-						<input class="order-text" style="width:45%;margin-right: 15px;" type="text" name="" placeholder="Số điện thoại*">
-						<input class="order-text" style="width:45%;" type="text" name="" placeholder="Email*">
-						<div style="clear:both"><input type="checkbox"  value="">Tôi đặt phòng giúp cho người khác</div>
-						
-					</form>
+				<div class="border-none"> 
+					<div class="intro">
+						<div class="intro-title">Giới thiệu tổng quan</div>
+						<div class="intro-input">
+							<input class="input name" type="text" name="" placeholder="Họ và tên*">
+							<input class="input phone" type="text" name="" placeholder="Số điện thoại*">
+							<input class="input" type="text" name="" placeholder="Email*">
+							<div class="check">
+								<input type="checkbox" value=""><span>Tôi đặt phòng giúp cho người khác</span>
+							</div>
+							
+						</div>
+					</div>
+					
 				</div>
 				<div class="border-none">
-					<div class="title">Yêu cầu đặt biệt</div>
-					<p>Chọn loại giường</p>
-					<input style="float:left;" type="radio" name="">
-					<label style="padding:9px">1 Giường Đôi</label>
-					<div style="height: 40px;background-color:rgba(0, 121, 211, 0.1);border-radius: 5px;margin-bottom: 13px;"><h6 style="padding:11px">Yêu cầu đặt biệt</h6></div>
-					<div style="background-color:rgba(0, 121, 211, 0.1);border-radius: 5px; display: table;">
-						<h6 style="margin:11px">Xuất hoá đơn</h6>
-						<p>Khi cần xuất hoá đơn GTGT, Quý khách vui lòng gửi yêu cầu đến HnN Travel kể từ thời điểm nhận mail đến trước 15h00 ngày hôm sau</p>
-						<div style="float:left">
-							<input style="float:left;" type="radio" name="">
-							<label>Yêu cầu xuất hoá đơn</label>
+					<div class="request">
+						<div class="intro-title">Yêu cầu đặt biệt</div>
+						<p>Chọn loại giường</p>
+						<div class="check">
+							<input class="fl" type="checkbox" name="">
+							<img class="fl" src="../img/hotel/order/double-bed.png">
+							<label>1 Giường Đôi</label>
 						</div>
-						
-						<p style="float:right;">Điều khoản xuất hoá đơn</p>
-					</div>
-				</div>
-				<div class="border-none" style="width:100%;height: 69px;">
-					<div style="float:left;">
-						<img style="float:left" src="../img/hotel/order/sale.png">
-						<div style="float:right;color: #0C5393;font-size: 25px;font-weight: 700;">Mã giảm giá</div>
-					</div>
-					<div style="float:right">
-						<img style="float:left" src="../img/hotel/order/magiam.svg">
-						<img style="float:right" src="../img/hotel/order/pen.png">
-					</div>
-				</div>
-				<div class="border-none" style="width:100%;">
-					<div class="border-none" style="background-color:rgba(237, 137, 54, 0.1);height: 68px;">
-						<p style="color:#ED8936">HnN Travel sẽ chủ động liên hệ với quý khách trong vòng 30 phút để xác nhận phòng trống và hướng dẫn thanh toán.</p>
-					</div>
-					<div style="float:right">
-						<div style="float:right;margin-left: 100px;">
-							<h5 style="text-transform:uppercase;color: #3FA947;">Miễn phí hoàn huỷ</h5>
-							<button style="background: #0079D3;border-radius: 5px;font-weight: 600;font-size: 15px;line-height: 18px;text-align: right;padding: 12px 32px;color: #FFFFFF;" type="submit">Gửi yêu cầu đặt phòng</button>
+						<div class="rq-special">
+							<h6>Yêu cầu đặt biệt</h6>
+							<img src="../img/hotel/order/x-circle.png">
 						</div>
-						<div style="width:325px;margin-top: 90px;">Bằng cách nhấn nút Thanh toán, bạn đồng ý với <a href="#">Điều kiện và điều khoản</a> của chúng tôi</div>
+						<div class="rq-special clear">
+							<div class="rq-special-text">
+								<h6>Xuất hoá đơn</h6>
+								<div class="text">
+									<p>Khi cần xuất hoá đơn GTGT, Quý khách vui lòng gửi yêu cầu đến HnN Travel kể từ thời điểm nhận mail đến trước 15h00 ngày hôm sau</p>
+									<div class="check">
+										<input class="fl-l" type="checkbox" name="">
+										<p>Yêu cầu xuất hoá đơn</p>
+									</div>
+									<p class="dk">Điều khoản xuất hoá đơn</p>
+								</div>
+							</div>
+							<div class="rq-special-img">
+								<img src="../img/hotel/order/x-circle-.png">
+							</div>	
+						</div>
 					</div>
 					
+				</div>
+				<div class="border-none">
+					<div class="order-sale">
+						<div class="five fl">
+							<img class="fl-l" src="../img/hotel/order/sale.png">
+							<div class="intro-title">Mã giảm giá</div>
+						</div>
+						<div class=" five fl-r">
+							<div class="order-sale-text">
+								<img src="../img/hotel/order/magiam.svg">
+								<h6>CHAODANANG</h6>
+							</div>
+								<img class="pen" src="../img/hotel/order/pen.png">
+						</div>
+					</div>
 					
+				</div>
+				<div class="border-none">
+					<div class="note">
+						<div class="note-text">
+							<p>HnN Travel sẽ chủ động liên hệ với quý khách trong vòng 30 phút để xác nhận phòng trống và hướng dẫn thanh toán.</p>
+						</div>
+						<div class="note-button">
+							<div >
+								<h5 >Miễn phí hoàn huỷ</h5>
+								<button class="button-box" type="submit">Gửi yêu cầu đặt phòng</button>
+							</div>
+							<div class="clear r">Bằng cách nhấn nút Thanh toán, bạn đồng ý với <a href="#">Điều kiện và điều khoản</a> của chúng tôi</div>
+						</div>	
+					</div>
+									
 				</div>
 			</div>
-			<div style="width:35%; float: right;">
+			<div class="four fl-r">
 				<div class="border-none">
-					<div style="    border-bottom: 1px solid #C4C4C4;">
-						<img src="../img/hotel/order/od2.png">
-					</div>
-					<h5 style="font-weight: 600">Deluxe King</h5>
-					<div>
-						<p style="float:left;">1 Giường Đôi</p>
-						<p style="float:right">2 Người Lớn</p>
-					</div>
-					<div>
-						<p style="color:#156822">Bữa sáng miễn phí</p>
-						<p style="color:#156822">Wifi miễn phí  </p>
-						<p style="color:#F10000">Không hút thuốc</p>
-						<p>Chính sách hành khách và trẻ em</p>
-						<p>Chính sách huỷ phòng</p>
-						<p style="color:#ED8936">Xác nhận đặt phòng trong 30 phút</p>
+					<div class="right-infor">
+						<div class="name">
+							<img class="name-sale" src="../img/home/deal/sale.png">
+							<p>-5%</p>
+							<img src="../img/hotel/order/od2.png">
+							<h5>Deluxe King</h5>
+						</div>
+						<div>
+							<div class="five fl">
+								<img class="fl-l" src="../img/hotel/order/double-bed.png">
+								<p>1 Giường Đôi</p>
+							</div>
+							<div class="five fl">
+								<img class="fl-l" src="../img/hotel/detail/users.png">
+								<p>2 Người Lớn</p>
+							</div>
+						</div>
+						<div class="clear right-infor-service">
+							<div class="clear pad">
+								<img class="fl-l" src="../img/icon/eat.png">
+								<p class="green">Bữa sáng miễn phí</p>
+							</div>
+							<div class="clear pad">
+								<img class="fl-l" src="../img/icon/wifi.png">
+								<p class="green">Wifi miễn phí</p>
+							</div>
+							<div class="clear pad">
+								<img class="fl-l" src="../img/icon/no-smoking.png">
+								<p class="red">Không hút thuốc</p>
+							</div>
+							<div class="clear pad">
+								<img class="fl-l" src="../img/icon/infor.png">
+								<p>Chính sách hành khách và trẻ em</p>
+							</div>
+							<div class="clear pad">
+								<img class="fl-l" src="../img/icon/infor.png">
+								<p>Chính sách huỷ phòng</p>
+							</div>
+							<div class="clear pad">
+								<img class="fl-l" src="../img/icon/thunder.png">
+								<p class="orange">Xác nhận đặt phòng trong 30 phút</p>
+							</div>
+							<div class="clear check">
+								<img class="fl-l" src="../img/icon/check.png">
+								<p class="orange">Phòng trống sẽ được xác nhận sớm</p>
+							</div>
+						</div>
+						<div class="clear right-infor-price">
+							<div class="clear right-infor-room">
+								<p class="fl">1 phòng x 1 đêm</p>
+								<p class="number">12.550.000đ</p>
+							</div>
+							
+							<div class="clear right-infor-tax">
+								<p class="fl">Thuế và phí dịch vụ khách sạn</p>
+								<p class="number">213.000đ</p>
+							</div>
+							
+							<div class="clear right-infor-sum">
+								<p class="fl">Tổng giá phòng</p>
+								<p class="number">12.763.000đ</p>
+							</div>
+							
+							<div class="clear right-infor-total">
+								<div class="fl">
+									<h6>Tổng tiền thanh toán</h6>
+									<span>Đã bao gồm thuế, phí, VAT</span>
+								</div>
+								<div class="r">
+									<h5>12.463.723đ</h5>
+									<span>(Giá cho 2 người lớn)</span>
+								</div>
+							</div>
+						</div>
 					</div>
 					
-					<div>
-						<p style="float:left;">1 phòng x 1 đêm</p>
-						<p style="float:right;">12.550.000đ</p>
-					</div>
-					
-					<div style="clear:both;">
-						<p style="float:left;">Thuế và phí dịch vụ khách sạn</p>
-						<p style="float:right;">213.000đ</p>
-					</div>
-					
-					<div style="border-bottom:2px solid #3FA947;clear: both;display: flow-root;">
-						<p style="float:left;">Tổng giá phòng</p>
-						<p style="float:right;">12.763.000đ</p>
-					</div>
-					
-					<div>
-						<p style="float:left;">Tổng tiền thanh toán</p>
-						<p style="float:right;">12.463.723đ</p>
-					</div>
 				</div>
 			</div>
 		</section>
-			<section class="footer">
+	</div>
+	<section class="footer">
 		<div class="ft">
 			<div class="ft-content">
 				<div>
 					<img src="../img/logo.png">
 				</div>
 				<h3>Công ty cổ phần du lịch HnN Travel</h3>
-				<ul style="margin-top:20px;">
+				<ul>
 					<li>
-						<img src="../img/icon/location.svg">
-						215 Nguyễn Hữu Thọ, Hải Châu, Đà Nẵng
+						<img src="../img/icon/location.png">
+						<p>215 Nguyễn Hữu Thọ, Hải Châu, Đà Nẵng</p>
 					</li>
 					<li>
 						<img src="../img/icon/icon-call.svg">
-						(+84) 236 123 4567
+						<p>(+84) 236 123 4567</p>
 					</li>
 					<li>
 						<img src="../img/icon/icon-mail.svg">
-						info@hnntravel.com
+						<p>info@hnntravel.com</p>
 					</li>
 					<li><img src="../img/home/footer/Capture.png"></li>
 				</ul>
@@ -185,19 +294,19 @@
 					<li>Trợ giúp</li>
 					<li>Phản hồi của khách hàng</li>
 				</ul>
-				<h5 style="margin-top:15px">Theo dõi chúng tôi trên</h5>
+				<h5>Theo dõi chúng tôi trên</h5>
 				<ul>
 					<li>
 						<img src="../img/icon/fb.png">
-						Facebook
+						<p>Facebook</p>
 					</li>
 					<li>
 						<img src="../img/icon/ig.png">
-						Intagram
+						<p>Intagram</p>
 					</li>
 					<li>
 						<img src="../img/icon/yt.png">
-						Youtube
+						<p>Youtube</p>
 					</li>
 				</ul>
 			</div>
@@ -209,20 +318,17 @@
 					<li>Hội nghị / Sự kiện</li>
 					<li>Nhà hàng / Bar</li>
 				</ul>
-				<h5>Đăng ký ngay để nhận thông tin mới nhất!</h5>
-				<div style="margin-top: 37px;">
-					<div class="ft-tx">
-						<input type="text" name="" placeholder="Nhập email của bạn ...">
-					</div>
-					<div class="ft-bt">
-						<button type="submit"><img src="../img/icon/send.png"></button>
-					</div>
-					
-					
+				<div class="ft-s">
+					<h5>Đăng ký ngay để nhận thông tin mới nhất!</h5>
+						<div class="ft-tx">
+							<input type="text" name="" placeholder="Nhập email của bạn ...">
+						</div>
+						<div class="ft-bt">
+							<button type="submit"><img src="../img/icon/send.png"></button>
+						</div>
 				</div>
+				
 			</div>
 		</div>
 	</section>
-	</div>
-</body>
 </html>
