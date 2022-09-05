@@ -6,7 +6,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet"href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<title>Hotel|Search</title>
 </head>
 <header class="header">
@@ -23,12 +27,12 @@
 					<a href="#"><li style="color: #135997;"><img src="../img/icon/icon-call.svg"><span>(+84) 236 123 4567</span></li></a>
 				</ul>
 			</div>
-			<div >
+			<div class="list-header">
 				<ul>
 					<li><a href="hotel.html">KHÁCH SẠN</a></li>
 					<li><a href="tour.html">TOUR</a></li>
-					<li><a href="event.html">HỘI NGHỊ / SỰ KIỆN</a></li>
-					<li><a href="restaurant.html">NHÀ HÀNG / BARS</a></li>
+					<li><a href="conference.html">HỘI NGHỊ / SỰ KIỆN</a></li>
+					<li><a href="restaurants.html">NHÀ HÀNG / BARS</a></li>
 					<li><a href="guide.html">CẨM NANG DU LỊCH</a></li>
 					<li><a href="feedback.html">ĐÁNH GIÁ</a></li>
 					<li><a href="contact.html">LIÊN HỆ</a></li>
@@ -45,49 +49,38 @@
 		
 </header>
 <body>
+<input type="checkbox"name="open"id="open">
 <div class="wrapper">
+	<nav class="slidebar">
+		<div class="hamburger">
+			<label for="open"class="open">
+          <i class="fas fa-bars"></i>
+        </label>
+        <div class="menu">
+          <div class="logo">
+            <a href="#">
+              <img src="../img/logo.png"alt="">
+            </a>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hotel.html">Khách sạn</a></li>
+            <li><a href="tour.html">Tours</a></li>
+            <li><a href="conference.html">Hội nghị / Sự kiện</a></li>
+            <li><a href="restaurants.html">nhà hàng / bars</a></li>
+            <li><a href="guide.html">cẩm nang du lịch</a></li>
+            <li><a href="feedback.html">đánh giá</a></li>
+            <li><a href="contact.html">liên hệ</a></li>
+            <li><a href="#">(+84) 236 123 4567</a></li>
+          </ul>
+        </div>
+		</div>
+     <div class="mobi-logo">
+     	<a href="index.html"><img src="../img/logo.png"></a>
+     </div>   
+    </nav>
 	<section>
 		<div class="slide-home"><img class="img fl-l" src="../img/hotel/search/banner.png"/></div>
-		<div class="width">
-			<div class="search-banner">
-			<form method="post">
-				<div class="select-box">
-					<h6>Địa điểm</h6>
-					<img src="../img/home/banner/location.png">
-					<input type="text" name="" placeholder="Đà Nẵng">
-					
-				</div>
-				<div class="select-box">
-					<h6>Chất lượng phòng</h6> 
-					<img src="../img/home/banner/like.png">
-					<select>
-                        <option value="">Chất lượng phòng</option>
-                        <option value="5">Khách sạn 5 sao</option>
-                        <option value="4">Khách sạn 4 sao</option>
-                        <option value="3">Khách sạn 3 sao</option>
-                        <option value="2">Khách sạn 2 sao</option>
-                        <option value="1">Khách sạn 1 sao</option>
-                    </select>
-                   
-				</div>
-				<div class="select-box">
-					<h6>Mức giá</h6>
-					<img src="../img/home/banner/price.png">
-                    <select>
-                        <option value="">Tất cả</option>
-                        <option value="1">Từ 0đ đến 1.000.000đ</option>
-                        <option value="2">Từ 1.000.000đ đến 5.000.000đ</option>
-                        <option value="3">Trên 5.000.000đ</option>
-                    </select>
-                    
-				</div>
-				<div class="button">
-					<img src="../img/home/banner/search.png">
-					<button class="button-box" type="submit">Tìm khách sạn</button>
-				</div>
-			</form>				
-			</div>	
-		</div>
 	</section>
 	<div class="clear width">
 		<div class="fl-l">Trang chủ ></div>
@@ -95,7 +88,7 @@
 		<div class="active">Khách sạn Đà Nẵng</div>
 	</div>
 	<div class="width search-map">
-		<div class="fl-l">
+		<div class="fl-l search-map-img">
 			<img src="../img/hotel/search/map.png">
 		</div>
 		<div class="search-map-text">
@@ -207,7 +200,7 @@
 					                <i class="c-star fa fa-star" rel="1"></i>
 				            		</label>
 				            	</div>
-				            	<label class="h6">Khách sạn</label>            
+				            	<label class="type">Khách sạn</label>            
 				            </div>
 				            <div class="location">
 				            	<img src="../img/hotel/search/location.png" alt="">
@@ -237,7 +230,7 @@
 		        	</div>
 		        	<p>Giá phòng mỗi đêm chỉ từ</p>
 		        	<h6>2.550.000đ</h6>
-		        	<button class="button-box"><a href="hotel-order.html">Chọn phòng ></a></button>
+		        	<a href="hotel-detail.html"><div class="button-box">Chọn phòng ></div></a>
 		        </div>
 			</div>
 			<div class="search-content">
@@ -256,7 +249,7 @@
 					                <i class="c-star fa fa-star" rel="1"></i>
 				            		</label>
 				            	</div>
-				            	<label class="h6">Khách sạn</label>            
+				            	<label class="type">Khách sạn</label>            
 				            </div>
 				            <div class="location">
 				            	<img src="../img/hotel/search/location.png" alt="">
@@ -287,7 +280,7 @@
 		        	
 		        	<p>Giá phòng mỗi đêm chỉ từ</p>
 		        	<h6>2.550.000đ</h6>
-		        	<button class="button-box">Chọn phòng ></button>
+		        	<a href="hotel-detail.html"><div class="button-box">Chọn phòng ></div></a>
 		        </div>
 			</div>
 			<div class="search-content">
@@ -306,7 +299,7 @@
 					                <i class="c-star fa fa-star" rel="1"></i>
 				            		</label>
 				            	</div>
-				            	<label class="h6">Khách sạn</label>            
+				            	<label class="type">Khách sạn</label>            
 				            </div>
 				            <div class="location">
 				            	<img src="../img/hotel/search/location.png" alt="">
@@ -337,7 +330,7 @@
 		        	
 		        	<p>Giá phòng mỗi đêm chỉ từ</p>
 		        	<h6>2.550.000đ</h6>
-		        	<button class="button-box">Chọn phòng ></button>
+		        	<a href="hotel-detail.html"><div class="button-box">Chọn phòng ></div></a>
 		        </div>
 			</div>
 			<div class="search-content">
@@ -356,7 +349,7 @@
 					                <i class="c-star fa fa-star" rel="1"></i>
 				            		</label>
 				            	</div>
-				            	<label class="h6">Khách sạn</label>            
+				            	<label class="type">Khách sạn</label>            
 				            </div>
 				            <div class="location">
 				            	<img src="../img/hotel/search/location.png" alt="">
@@ -387,7 +380,7 @@
 		        	
 		        	<p>Giá phòng mỗi đêm chỉ từ</p>
 		        	<h6>2.550.000đ</h6>
-		        	<button class="button-box">Chọn phòng ></button>
+		        	<a href="hotel-detail.html"><div class="button-box">Chọn phòng ></div></a>
 		        </div>
 			</div>
 			<div class="search-content">
@@ -406,7 +399,7 @@
 					                <i class="c-star fa fa-star" rel="1"></i>
 				            		</label>
 				            	</div>
-				            	<label class="h6">Khách sạn</label>            
+				            	<label class="type">Khách sạn</label>            
 				            </div>
 				            <div class="location">
 				            	<img src="../img/hotel/search/location.png" alt="">
@@ -437,24 +430,24 @@
 		        	
 		        	<p>Giá phòng mỗi đêm chỉ từ</p>
 		        	<h6>2.550.000đ</h6>
-		        	<button class="button-box">Chọn phòng ></button>
+		        	<a href="hotel-detail.html"><div class="button-box">Chọn phòng ></div></a>
 		        </div>
 			</div>
 		</section>
+		<div class="pagination1">
+		   <a href="#"><</a>
+		   <a class="active" href="#">1</a>
+		   <a href="#">2</a>
+		   <a href="#">3</a>
+		   <a href="#">4</a>
+		   <a href="#">5</a>
+		   <a href="#">6</a>
+		   <a href="#">></a>
+		</div>
 	</section>
-	<div class="pagination">
-	   <a href="#"><</a>
-	   <a class="active" href="#">1</a>
-	   <a href="#">2</a>
-	   <a href="#">3</a>
-	   <a href="#">4</a>
-	   <a href="#">5</a>
-	   <a href="#">6</a>
-	   <a href="#">></a>
-	</div>
 <section class="footer">
 	<div class="ft">
-		<div class="ft-content">
+		<div class="ft-content ft-left">
 			<div>
 				<img src="../img/logo.png">
 			</div>
@@ -476,46 +469,58 @@
 			</ul>
 		</div>
 		<div class="ft-content">
-			<h5>Về HnN Travel</h5>
-			<ul>
-				<li>Cách đặt chỗ</li>
-				<li>Liên hệ chúng tôi</li>
-				<li>Quy định về thanh toán</li>
-				<li>Trợ giúp</li>
-				<li>Phản hồi của khách hàng</li>
-			</ul>
-			<h5>Theo dõi chúng tôi trên</h5>
-			<ul>
-				<li>
-					<img src="../img/icon/fb.png">
-					<p>Facebook</p>
-				</li>
-				<li>
-					<img src="../img/icon/ig.png">
-					<p>Intagram</p>
-				</li>
-				<li>
-					<img src="../img/icon/yt.png">
-					<p>Youtube</p>
-				</li>
-			</ul>
+			<div class="ft-bd">
+				<input type="checkbox" id="ft-about" name="ft-about">
+				<label for="ft-about">Về HnN Travel </label>
+				<ul class="ft-about">
+					<li>Cách đặt chỗ</li>
+					<li>Liên hệ chúng tôi</li>
+					<li>Quy định về thanh toán</li>
+					<li>Trợ giúp</li>
+					<li>Phản hồi của khách hàng</li>
+				</ul>
+			</div>
+			<div class="ft-bd">
+				<label>Theo dõi chúng tôi trên</label>
+				<ul class="ft-follow">
+					<li>
+						<img src="../img/icon/fb.png">
+						<p>Facebook</p>
+					</li>
+					<li>
+						<img src="../img/icon/ig.png">
+						<p>Intagram</p>
+					</li>
+					<li>
+						<img src="../img/icon/yt.png">
+						<p>Youtube</p>
+					</li>
+				</ul>
+			</div>
+			
 		</div>
 		<div class="ft-content">
-			<h5>Dịch vụ của chúng tôi</h5>
-			<ul>
-				<li>Khách sạn</li>
-				<li>Tours</li>
-				<li>Hội nghị / Sự kiện</li>
-				<li>Nhà hàng / Bar</li>
-			</ul>
+			<div class="ft-bd">
+				<input type="checkbox" id="ft-service" name="ft-service">
+				<label for="ft-service">Dịch vụ của chúng tôi</label>
+				<ul class="ft-service">
+					<li>Khách sạn</li>
+					<li>Tours</li>
+					<li>Hội nghị / Sự kiện</li>
+					<li>Nhà hàng / Bar</li>
+				</ul>
+			</div>
+			
 			<div class="ft-s">
-				<h5>Đăng ký ngay để nhận thông tin mới nhất!</h5>
+				<label>Đăng ký ngay để nhận thông tin mới nhất!</label>
+				<di>
 					<div class="ft-tx">
 						<input type="text" name="" placeholder="Nhập email của bạn ...">
 					</div>
 					<div class="ft-bt">
-						<button type="submit"><img src="../img/icon/send.png"></button>
+						<div type="submit"><img src="../img/icon/send.png"></div>
 					</div>
+				</div>
 			</div>
 			
 		</div>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"crossorigin="anonymous"/>
+	<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Restaurants</title>
+</head>
+<header class="header">
+	<div class="header__menu">
+		<div class="header-left">
+			<div >
+				<a href="index.html"><img src="../img/logo.png"></a>
+			</div>
+		</div>
+		<div class="header-right">
+		 		<div  class="contact-h">
+				<ul>
+					<li><a href="#">
+							<div class="fl-l">
+								<img src="../img/icon/icon-mail.svg"/>
+							</div>
+							<span>info@hnntravel.com</span>
+						</a>
+					</li>
+					<li><a href="#">
+							<div class="fl-l">
+								<img src="../img/icon/icon-call.svg">
+							</div>
+							<span>(+84) 236 123 4567</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="list-header">
+				<ul>
+					<li><a href="hotel.html">KHÁCH SẠN</a></li>
+					<li><a href="tour.html">TOUR</a></li>
+					<li><a href="conference.html">HỘI NGHỊ / SỰ KIỆN</a></li>
+					<li><a href="restaurants.html">NHÀ HÀNG / BARS</a></li>
+					<li><a href="guide.html">CẨM NANG DU LỊCH</a></li>
+					<li><a href="feedback.html">ĐÁNH GIÁ</a></li>
+					<li><a href="contact.html">LIÊN HỆ</a></li>
+					<li>
+	                    <select style="border: none;">
+	                        <option>VN</option>
+	                        <option>EN</option>
+	                    </select>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		
+</header>
+<body>
+<input type="checkbox"name="open"id="open">
+<div class="wrapper">
+	<nav class="slidebar">
+		<div class="hamburger">
+			<label for="open"class="open">
+          <i class="fas fa-bars"></i>
+        </label>
+        <div class="menu">
+          <div class="logo">
+            <a href="#">
+              <img src="../img/logo.png"alt="">
+            </a>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hotel.html">Khách sạn</a></li>
+            <li><a href="tour.html">Tours</a></li>
+            <li><a href="conference.html">Hội nghị / Sự kiện</a></li>
+            <li><a href="restaurants.html">nhà hàng / bars</a></li>
+            <li><a href="guide.html">cẩm nang du lịch</a></li>
+            <li><a href="feedback.html">đánh giá</a></li>
+            <li><a href="contact.html">liên hệ</a></li>
+            <li><a href="#">(+84) 236 123 4567</a></li>
+          </ul>
+        </div>
+		</div>
+     <div class="mobi-logo">
+     	<a href="index.html"><img src="../img/logo.png"></a>
+     </div>   
+    </nav>
+	<section class="header-slide">
+		<div id="carousel-simple" class="carousel slide" data-ride="carousel">
+	    	<div class="carousel-inner" role="listbox">
+		        <div class="item active">
+		          <img src="../img/restaurants/slide.png" alt="">
+		        </div>
+		        <div class="item">
+		          <img src="../img/restaurants/slide.png" alt="">
+		        </div>
+		         <div class="item">
+		          <img src="../img/restaurants/slide.png" alt="">
+		        </div>
+		         <div class="item">
+		          <img src="../img/restaurants/slide.png" alt="">
+		        </div>
+		    </div>
+	    </div>
+		<section class="banner-header">
+			<div class="banner-home">
+			<div>
+				<h4>Khám phá ẩm thực đặc sắc với nhiều ưu đãi cùng HnN travel</h4>
+				<p></p>
+				<p>Từ nhà hàng sang trọng đẳng cấp đến không gian cà phê thân mật thoã mãn khẩu vị của mọi thực khách</p>
+			</div>
+			<div class="select">
+				<form method="post">
+					<div class="select-box">
+						<h6>Địa điểm</h6>
+						<img src="../img/home/banner/location.png">
+						<input type="text" name="" placeholder="Bạn muốn đi đâu?">
+						
+					</div>
+					<div class ="select-box">
+						<h6>Chất lượng phòng</h6> 
+						<img src="../img/home/banner/like.png">
+						<select>
+				              <option value="">Chất lượng phòng</option>
+				              <option value="5">Khách sạn 5 sao</option>
+				              <option value="4">Khách sạn 4 sao</option>
+				              <option value="3">Khách sạn 3 sao</option>
+				              <option value="2">Khách sạn 2 sao</option>
+				              <option value="1">Khách sạn 1 sao</option>
+				        </select>
+	                   
+					</div>
+					<div class="select-box">
+						<h6>Mức giá</h6>
+						<img src="../img/home/banner/price.png">
+                        <select>
+                            <option value="">Tất cả</option>
+                            <option value="1">Từ 0đ đến 1.000.000đ</option>
+                            <option value="2">Từ 1.000.000đ đến 5.000.000đ</option>
+                            <option value="3">Trên 5.000.000đ</option>
+                        </select>
+                        
+					</div>
+					<a href="restaurants-search.html">
+						<div class="button-header">
+							<img src="../img/home/banner/search.png">
+							<div class="button-box">Tìm phòng</div>
+						</div>
+					</a>
+				</form>
+			</div>
+		</section>
+	</section>
+	<section class="section">
+		<div class="title center">
+			Lựa chọn 
+			<span>HÀNG ĐẦU</span>
+		</div>
+		<p class="center restaurants-p">Thưởng thức ẩm thực tinh hoa với những lựa chọn phong phú, được chế biến từ nguyên liệu đặc sản địa phương theo mùa và phục vụ bởi lòng hiếu khách chân thành của người Việt Nam.</p>
+	</section>
+	<section class="section">
+		<div class="three restaurants-content fl-l">
+			<div class="tour-border">
+				<img src="../img/restaurants/home/home1.png">
+				<div class="restaurants-home-top">
+					<h5>Sheraton Grand Danang Resort</h5>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/location.png">
+						<p>341 Trần Hưng Đạo, Sơn Trà, An Hải Bắc, Sơn Trà, Đà Nẵng</p>
+					</div>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/clock.png">
+						<p>Giờ mở cửa: 12h00 - 23h00</p>
+					</div>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/book.png">
+						<p>Các món đặc sắc: Tôm càng nướng wasabi, Gà hấp đông cô sốt bào ngư, Bò nấu cay, Cua rang me kiểu Thái ...</p>
+					</div>
+					<a href="restaurants-detail.html"><div class="restaurants-button">
+						Xem chi tiết
+					</div></a>
+				</div>
+			</div>
+		</div>
+		<div class="three restaurants-content fl-l">
+			<div class="tour-border">
+				<img src="../img/restaurants/home/home2.png">
+				<div class="restaurants-home-top">
+					<h5>Sheraton Grand Danang Resort</h5>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/location.png">
+						<p>341 Trần Hưng Đạo, Sơn Trà, An Hải Bắc, Sơn Trà, Đà Nẵng</p>
+					</div>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/clock.png">
+						<p>Giờ mở cửa: 12h00 - 23h00</p>
+					</div>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/book.png">
+						<p>Các món đặc sắc: Tôm càng nướng wasabi, Gà hấp đông cô sốt bào ngư, Bò nấu cay, Cua rang me kiểu Thái ...</p>
+					</div>
+					<a href="restaurants-detail.html"><div class="restaurants-button">
+						Xem chi tiết
+					</div></a>
+				</div>
+			</div>
+		</div>
+		<div class="three restaurants-content fl-l">
+			<div class="tour-border">
+				<img src="../img/restaurants/home/home3.png">
+				<div class="restaurants-home-top">
+					<h5>Sheraton Grand Danang Resort</h5>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/location.png">
+						<p>341 Trần Hưng Đạo, Sơn Trà, An Hải Bắc, Sơn Trà, Đà Nẵng</p>
+					</div>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/clock.png">
+						<p>Giờ mở cửa: 12h00 - 23h00</p>
+					</div>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/book.png">
+						<p>Các món đặc sắc: Tôm càng nướng wasabi, Gà hấp đông cô sốt bào ngư, Bò nấu cay, Cua rang me kiểu Thái ...</p>
+					</div>
+					<a href="restaurants-detail.html"><div class="restaurants-button">
+						Xem chi tiết
+					</div></a>
+				</div>
+			</div>
+		</div>
+		<div class="three restaurants-content fl-l">
+			<div class="tour-border">
+				<img src="../img/restaurants/home/home4.png">
+				<div class="restaurants-home-top">
+					<h5>Sheraton Grand Danang Resort</h5>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/location.png">
+						<p>341 Trần Hưng Đạo, Sơn Trà, An Hải Bắc, Sơn Trà, Đà Nẵng</p>
+					</div>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/clock.png">
+						<p>Giờ mở cửa: 12h00 - 23h00</p>
+					</div>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/book.png">
+						<p>Các món đặc sắc: Tôm càng nướng wasabi, Gà hấp đông cô sốt bào ngư, Bò nấu cay, Cua rang me kiểu Thái ...</p>
+					</div>
+					<a href="restaurants-detail.html"><div class="restaurants-button">
+						Xem chi tiết
+					</div></a>
+				</div>
+			</div>
+		</div>
+		<div class="three restaurants-content fl-l">
+			<div class="tour-border">
+				<img src="../img/restaurants/home/home5.png">
+				<div class="restaurants-home-top">
+					<h5>Sheraton Grand Danang Resort</h5>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/location.png">
+						<p>341 Trần Hưng Đạo, Sơn Trà, An Hải Bắc, Sơn Trà, Đà Nẵng</p>
+					</div>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/clock.png">
+						<p>Giờ mở cửa: 12h00 - 23h00</p>
+					</div>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/book.png">
+						<p>Các món đặc sắc: Tôm càng nướng wasabi, Gà hấp đông cô sốt bào ngư, Bò nấu cay, Cua rang me kiểu Thái ...</p>
+					</div>
+					<a href="restaurants-detail.html"><div class="restaurants-button">
+						Xem chi tiết
+					</div></a>
+				</div>
+			</div>
+		</div>
+		<div class="three restaurants-content fl-l">
+			<div class="tour-border">
+				<img src="../img/restaurants/home/home6.png">
+				<div class="restaurants-home-top">
+					<h5>Sheraton Grand Danang Resort</h5>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/location.png">
+						<p>341 Trần Hưng Đạo, Sơn Trà, An Hải Bắc, Sơn Trà, Đà Nẵng</p>
+					</div>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/clock.png">
+						<p>Giờ mở cửa: 12h00 - 23h00</p>
+					</div>
+					<div class="txt">
+						<img class="fl-l" src="../img/restaurants/home/book.png">
+						<p>Các món đặc sắc: Tôm càng nướng wasabi, Gà hấp đông cô sốt bào ngư, Bò nấu cay, Cua rang me kiểu Thái ...</p>
+					</div>
+					<a href="restaurants-detail.html"><div class="restaurants-button">
+						Xem chi tiết
+					</div></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="fl restaurants-left">
+			<div class="restaurants-bottom-left">
+				<p>Mục tiêu của chúng tôi là đảm bảo mỗi bữa ăn bạn thưởng thức ở đây đều hoàn hảo - và hoàn toàn đáng nhớ</p>
+			</div>
+			<img src="../img/restaurants/home/home7.png">
+		</div>
+		<div class="restaurants-bottom fl">
+			<div class="tour-border">
+				<img src="../img/restaurants/home/home8.png">
+				<div class="restaurants-bottom-right">
+					<h6>ĐẶT CHỖ RIÊNG NHANH CHÓNG & ĐƠN GIẢN VỚI HNN TRAVEL</h6>
+					<p>Kỷ niệm những khoảnh khắc quan trọng của cuộc đời bằng cách trải nghiệm ẩm thực riêng biệt với thực đơn được thiết kế riêng do đầu bếp riêng của bạn chuẩn bị. Hãy liên hệ với chúng tôi để tìm hiểu thêm những trải nghiệm cá nhân hóa chỉ dành riêng cho bạn.</p>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+</div>
+<section class="footer">
+	<div class="ft">
+		<div class="ft-content ft-left">
+			<div>
+				<img src="../img/logo.png">
+			</div>
+			<h3>Công ty cổ phần du lịch HnN Travel</h3>
+			<ul>
+				<li>
+					<img src="../img/icon/location.png">
+					<p>215 Nguyễn Hữu Thọ, Hải Châu, Đà Nẵng</p>
+				</li>
+				<li>
+					<img src="../img/icon/icon-call.svg">
+					<p>(+84) 236 123 4567</p>
+				</li>
+				<li>
+					<img src="../img/icon/icon-mail.svg">
+					<p>info@hnntravel.com</p>
+				</li>
+				<li><img src="../img/home/footer/Capture.png"></li>
+			</ul>
+		</div>
+		<div class="ft-content">
+			<div class="ft-bd">
+				<input type="checkbox" id="ft-about" name="ft-about">
+				<label for="ft-about">Về HnN Travel </label>
+				<ul class="ft-about">
+					<li>Cách đặt chỗ</li>
+					<li>Liên hệ chúng tôi</li>
+					<li>Quy định về thanh toán</li>
+					<li>Trợ giúp</li>
+					<li>Phản hồi của khách hàng</li>
+				</ul>
+			</div>
+			<div class="ft-bd">
+				<label>Theo dõi chúng tôi trên</label>
+				<ul class="ft-follow">
+					<li>
+						<img src="../img/icon/fb.png">
+						<p>Facebook</p>
+					</li>
+					<li>
+						<img src="../img/icon/ig.png">
+						<p>Intagram</p>
+					</li>
+					<li>
+						<img src="../img/icon/yt.png">
+						<p>Youtube</p>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="ft-content">
+			<div class="ft-bd">
+				<input type="checkbox" id="ft-service" name="ft-service">
+				<label for="ft-service">Dịch vụ của chúng tôi</label>
+				<ul class="ft-service">
+					<li>Khách sạn</li>
+					<li>Tours</li>
+					<li>Hội nghị / Sự kiện</li>
+					<li>Nhà hàng / Bar</li>
+				</ul>
+			</div>
+			
+			<div class="ft-s">
+				<label>Đăng ký ngay để nhận thông tin mới nhất!</label>
+				<di>
+					<div class="ft-tx">
+						<input type="text" name="" placeholder="Nhập email của bạn ...">
+					</div>
+					<div class="ft-bt">
+						<div type="submit"><img src="../img/icon/send.png"></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<script>
+$('.carousel').on('touchstart', function(event){
+    const xClick = event.originalEvent.touches[0].pageX;
+    $(this).one('touchmove', function(event){
+        const xMove = event.originalEvent.touches[0].pageX;
+        const sensitivityInPx = 5;
+ 
+        if( Math.floor(xClick - xMove) > sensitivityInPx ){
+            $(this).carousel('next');
+        }
+        else if( Math.floor(xClick - xMove) < -sensitivityInPx ){
+            $(this).carousel('prev');
+        }
+    });
+    $(this).on('touchend', function(){
+        $(this).off('touchmove');
+    });
+});
+</script>
+</body>
+</html>

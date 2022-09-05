@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+	<title></title>
+	<style type="text/css">
+		.form-content .em{
+			clear: both;
+			float: left;
+			width: 100%;
+		}
+		.form-content .em input{
+			width: 100%;
+		}
+		div.stars {
+		  width: 270px;
+		  display: inline-block;
+		}
+		input.star { display: none; }
+		label.star {
+		  float: right;
+		  padding: 10px;
+		  font-size: 36px;
+		  color: #0079D3;
+		} 
+		input.star:checked ~ label.star:before {
+		  content: '\f005';
+		  color: #FD4;
+		} 
+		label.star:before {
+		  content: '\f006';
+		  font-family: FontAwesome;
+		}
+	</style>
+</head>
+<body>
+
+<form>
+	<div class="modal" id="Modal" role="dialog">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="form">
+					<div class="form-title">Đánh giá khách hàng</div>
+					<div class="stars">
+					  <form action="">
+					    <input class="star star-5" id="star-5" type="radio" name="star"/>
+					    <label class="star star-5" for="star-5"></label>
+					    <input class="star star-4" id="star-4" type="radio" name="star"/>
+					    <label class="star star-4" for="star-4"></label>
+					    <input class="star star-3" id="star-3" type="radio" name="star"/>
+					    <label class="star star-3" for="star-3"></label>
+					    <input class="star star-2" id="star-2" type="radio" name="star"/>
+					    <label class="star star-2" for="star-2"></label>
+					    <input class="star star-1" id="star-1" type="radio" name="star"/>
+					    <label class="star star-1" for="star-1"></label>
+					  </form>
+					</div>
+					<div class="form-content">
+						<div class="form-input">
+							<p>Họ tên *</p>
+							<input type="text" name="">
+						</div>
+						<div>
+							<p>Số điện thoại *</p>
+							<input type="text" name="">
+						</div>
+						<div class="em">
+							<p>Email *</p>
+							<input type="text" name="">
+						</div>
+						
+						<div class="form-request clear">
+							<p>Mô tả trải nghiệm của bạn tại HnN Travel</p>
+							<input type="text" name="">
+						</div>
+					</div>
+					<button class="button-box fl-r">Gửi đánh giá</button>
+				</div>		
+		</div>
+	</div>
+</div>
+	
+</form>
+</body>
+</html>
