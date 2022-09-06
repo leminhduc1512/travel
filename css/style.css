@@ -379,8 +379,17 @@ a{
 	display: table;
 	clear: both;
 }
+.section-carousel{
+	max-width: 1260px;
+	padding-bottom: 48px;
+	display: table;
+	clear: both;
+}
+.top_place{
+	width: 1260px;
+	margin-bottom: 20px;
+}
 .top-place{
-	float: left;
 	width: 18.8%;
 	position: relative;
   margin-right: 12px;
@@ -408,7 +417,7 @@ a{
 .deal{
 	background: url(../img/home/deal/banner-deal.png);
 	background-size: cover;
-
+	overflow: hidden;
 }
 .title{
 	margin-bottom: 22px;
@@ -3162,6 +3171,12 @@ label.star:before {
     width: 100%;
     left: 2%;
 	}
+	.section-carousel{
+		display: unset;
+	}
+	.top_place{
+		width: unset;
+	}
 	.dcvr-text h5{
 		font-size: 15px;
 	}
@@ -3230,7 +3245,7 @@ label.star:before {
 		max-width: 900px;
 	}
 	.deal-hotel{
-		width: 31.4%;
+		width: 31%;
 	}
 /*end home*/
 /*tour*/
@@ -3383,10 +3398,7 @@ label.star:before {
 		font-size: 12px;
 	}
 	.top-place{
-		width: 23%;
-	}
-	.top-place:nth-child(5){
-		display: none;
+		width: 300px;
 	}
 	.other-content{
 		width: 32%;
@@ -3552,19 +3564,11 @@ label.star:before {
 	.category{
 		width: 200px;
 	}
-	.top_place{
-		margin-left: 20px;
-		display: flex;
-	}
 	.top-place{
 		width: 182px;
 	}
-	.top-place h5{
-		display: none;
-	}
 	.deal_hotel{
 		margin-left: 20px;
-		display: flex;
 	}
 	.deal-hotel{
 		width: 312px;
@@ -3723,8 +3727,7 @@ label.star:before {
 		width: 2000px;
 	}
 	.category{
-		width: auto;
-		height: 121px;
+		width: 200px;
 	}
 	.category-img{
 		width: 28px;
@@ -3732,19 +3735,11 @@ label.star:before {
 	.category h6{
 		position: unset;
 	}
-	.top_place{
-		margin-left: 20px;
-		display: flex;
-	}
 	.top-place{
-		width: 182px;
-	}
-	.top-place h5{
-		display: none;
+		width: 200px;
 	}
 	.deal_hotel{
 		margin-left: 20px;
-		display: flex;
 	}
 	.deal-hotel{
 		width: 312px;

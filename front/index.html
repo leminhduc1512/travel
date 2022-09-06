@@ -11,8 +11,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="../css/owl.carousel.min.css">
-  <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/flickity.min.css">
+  <script type="text/javascript" src="../css/flickity.pkgd.min.js"></script>
 	<title>Home</title>
 </head>
 <header class="header">
@@ -187,8 +187,8 @@
 		</div>
 	</section>
 	<section class="owl-carousel-mobi">
-		<div class="owl-carousel">
-			<div class="category">
+		<div class="carousel" data-flickity='{ "freeScroll": true,"contain": true, "prevNextButtons": false,"pageDots": false}'>
+			<div class="category carousel-cell">
 				<a href="hotel.html">
 					<div class="category-img">
 						<img src="../img/home/category/review.png">
@@ -198,7 +198,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="category">
+			<div class="category carousel-cell">
 				<a href="tour.html">
 					<div class="category-img">
 						<img src="../img/home/category/landscape.png">
@@ -208,7 +208,7 @@
 					 </div>
 				</a>
 			</div>
-			<div class="category">
+			<div class="category carousel-cell">
 				<a href="conference.html">
 					<div class="category-img">
 						<img src="../img/home/category/conference.png">
@@ -218,7 +218,7 @@
 					 </div>
 				</a>
 			</div>
-			<div class="category">
+			<div class="category carousel-cell">
 				<a href="restaurants.html">
 					<div class="category-img">
 						<img src="../img/home/category/food.png">
@@ -229,47 +229,49 @@
 				</a>
 			</div>
 		</div>
-		
 	</section>
-	<section class="section">
+	<section class="section-carousel">
 		<div class="title">
 			Top điểm đến <span>hấp dẫn</span>
 		</div>	
 		<div class="top_place">
-			<div class="top-place">
-				<div>
-					<a href="hotel-search.html">
-						<img src="../img/home/top_place/ha-noi.png">
-					<h5>Hà Nội</h5>
-					</a>
-					
+			<div class="carousel" data-flickity='{ "freeScroll": true,"contain": true, "prevNextButtons": false,"pageDots": false}'>
+				<div class="top-place carousel-cell">
+					<div>
+						<a href="hotel-search.html">
+							<img src="../img/home/top_place/ha-noi.png">
+						<h5>Hà Nội</h5>
+						</a>
+						
+					</div>
 				</div>
-			</div>
-			<div class="top-place">
-				<div>
-					<img src="../img/home/top_place/ho-chi-minh.png">
-					<h5>Hồ Chí Minh City</h5>
+				<div class="top-place carousel-cell">
+					<div>
+						<img src="../img/home/top_place/ho-chi-minh.png">
+						<h5>Hồ Chí Minh City</h5>
+					</div>
 				</div>
-			</div>
-			<div class="top-place">
-				<div>
-					<img src="../img/home/top_place/da-nang.png">
-					<h5>Đà Nẵng</h5>
+				<div class="top-place carousel-cell">
+					<div>
+						<img src="../img/home/top_place/da-nang.png">
+						<h5>Đà Nẵng</h5>
+					</div>
 				</div>
-			</div>
-			<div class="top-place">
-				<div>
-					<img src="../img/home/top_place/phan-thiet.png">
-					<h5>Phan Thiết</h5>
+				<div class="top-place carousel-cell">
+					<div>
+						<img src="../img/home/top_place/phan-thiet.png">
+						<h5>Phan Thiết</h5>
+					</div>
 				</div>
-			</div>
-			<div class="top-place">
-				<div>
-					<img src="../img/home/top_place/phu-quoc.png">
-					<h5>Phú Quốc</h5>
+				<div class="top-place carousel-cell">
+					<div>
+						<img src="../img/home/top_place/phu-quoc.png">
+						<h5>Phú Quốc</h5>
+					</div>
 				</div>
 			</div>
 		</div>
+		
 		
 	</section>
 	<div class="deal">
@@ -685,10 +687,5 @@
 		</div>
 	</section>
 </div>
-	<script>
-	  $(document).ready(function(){$(".owl-carousel").owlCarousel();});
-	</script>
-	<script src="../css/jquery.min.js"></script>
-  <script src="../css/owl.carousel.min.js"></script>
 </body>
 </html>
