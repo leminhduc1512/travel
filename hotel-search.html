@@ -3,29 +3,41 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@200;300;400;600;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet"href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"crossorigin="anonymous"/>
 	<link rel="shortcut icon" type="image/x-icon" href="./img/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/flickity.min.css">
+  <script type="text/javascript" src="css/flickity.pkgd.min.js"></script>
 	<title>Hotel|Search</title>
 </head>
-<header class="header">
+<body>
+	<header class="header">
 	<div class="header__menu">
 		<div class="header-left">
 			<div >
-				<a href="index.html"><img src="../img/logo.png"></a>
+				<a href="index.html"><img src="img/logo.png"></a>
 			</div>
 		</div>
 		<div class="header-right">
 			<div  class="contact-h">
 				<ul>
-					<a href="#"><li style="margin-right: 20px; color: #135997;"><img src="../img/icon/icon-mail.svg"/><span>info@hnntravel.com</span></li></a>
-					<a href="#"><li style="color: #135997;"><img src="../img/icon/icon-call.svg"><span>(+84) 236 123 4567</span></li></a>
+					<li><a href="#">
+							<div class="fl-l">
+								<img src="img/icon/icon-mail.svg"/>
+							</div>
+							<span>info@hnntravel.com</span>
+						</a>
+					</li>
+					<li><a href="#">
+							<div class="fl-l">
+								<img src="img/icon/icon-call.svg">
+							</div>
+							<span>(+84) 236 123 4567</span>
+						</a>
+					</li>
 				</ul>
 			</div>
 			<div class="list-header">
@@ -38,18 +50,18 @@
 					<li><a href="feedback.html">ĐÁNH GIÁ</a></li>
 					<li><a href="contact.html">LIÊN HỆ</a></li>
 					<li>
-	                    <select style="border: none;">
-	                        <option>VN</option>
-	                        <option>EN</option>
-	                    </select>
-					</li>
+							<span><img src="img/vi.png"></span>
+	              <select class="lang">
+	                  <option></option>
+	                  <option></option>
+	              </select>
+						</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 		
 </header>
-<body>
 <input type="checkbox"name="open"id="open">
 <div class="wrapper">
 	<nav class="slidebar">
@@ -60,7 +72,7 @@
         <div class="menu">
           <div class="logo">
             <a href="#">
-              <img src="../img/logo.png"alt="">
+              <img src="img/logo.png"alt="">
             </a>
           </div>
           <ul>
@@ -77,12 +89,56 @@
         </div>
 		</div>
      <div class="mobi-logo">
-     	<a href="index.html"><img src="../img/logo.png"></a>
+     	<a href="index.html"><img src="img/logo.png"></a>
      </div>   
     </nav>
-	<section>
-		<div class="slide-home"><img class="img fl-l" src="../img/hotel/search/banner.png"/></div>
+	<section class="header-slide">
+		<div class="slide-home"><img class="img fl-l" src="img/hotel/search/banner.png"/></div>
+		<section class="banner-header">
+			<div class="banner-home">
+			<div class="select-search">
+				<form method="post">
+					<div class="select-box">
+						<h6>Địa điểm</h6>
+						<img src="img/home/banner/location.png">
+						<input type="text" name="" placeholder="Bạn muốn đi đâu?">
+						
+					</div>
+					<div class ="select-box">
+						<h6>Chất lượng phòng</h6> 
+						<img src="img/home/banner/like.png">
+						<select>
+	              <option value="">Chất lượng phòng</option>
+	              <option value="5">Khách sạn 5 sao</option>
+	              <option value="4">Khách sạn 4 sao</option>
+	              <option value="3">Khách sạn 3 sao</option>
+	              <option value="2">Khách sạn 2 sao</option>
+	              <option value="1">Khách sạn 1 sao</option>
+	          </select>
+	                   
+					</div>
+					<div class="select-box">
+						<h6>Mức giá</h6>
+						<img src="img/home/banner/price.png">
+                        <select>
+                            <option value="">Tất cả</option>
+                            <option value="1">Từ 0đ đến 1.000.000đ</option>
+                            <option value="2">Từ 1.000.000đ đến 5.000.000đ</option>
+                            <option value="3">Trên 5.000.000đ</option>
+                        </select>
+                        
+					</div>
+					<a href="hotel-search.html">
+						<div class="button-header">
+							<img src="img/home/banner/search.png">
+							<div class="button-box">Tìm khách sạn</div>
+						</div>
+					</a>
+				</form>
+			</div>
+		</section>
 	</section>
+	
 	<div class="clear width">
 		<div class="fl-l">Trang chủ ></div>
 		<div class="fl-l"> Hotel > </div>
@@ -90,7 +146,7 @@
 	</div>
 	<div class="width search-map">
 		<div class="fl-l search-map-img">
-			<img src="../img/hotel/search/map.png">
+			<img src="img/hotel/search/map.png">
 		</div>
 		<div class="search-map-text">
 			<h4>Tìm thấy 245 Khách sạn 5 sao tại Đà Nẵng</h4>
@@ -187,7 +243,7 @@
 			</div>
 			<div class="search-content">
 				<div class="search-content-l">
-					<div class="search-content-img"><img src="../img/hotel/search/hotel.png"></div>
+					<div class="search-content-img"><img src="img/hotel/search/hotel.png"></div>
 			        <div class="search-content-infor">
 			        	<div class="bd">
 				        	<h5>Shilla Monogram Quangnam Danang</h5>
@@ -204,17 +260,17 @@
 				            	<label class="type">Khách sạn</label>            
 				            </div>
 				            <div class="location">
-				            	<img src="../img/hotel/search/location.png" alt="">
+				            	<img src="img/hotel/search/location.png" alt="">
 				            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
 				            </div>       
 			        	</div> 
 			        	<div class="search-service">
 				        	<div class="fl-l">
-				        		<img src="../img/hotel/search/eat.png">
+				        		<img src="img/hotel/search/eat.png">
 				        		<span>Bữa sáng</span>
 				        	</div>
 				        	<div class="fl-l">
-				        		<img src="../img/hotel/search/gym.png">
+				        		<img src="img/hotel/search/gym.png">
 				        		<span>Phòng gym</span>
 				        	</div>
 				        	<div class="add fl-l">
@@ -226,7 +282,7 @@
 				
 		        <div class="search-content-r">
 		        	<div class="search-sale">
-		        		<img class="fl-l" src="../img/hotel/search/sale.png">
+		        		<img class="fl-l" src="img/hotel/search/sale.png">
 		        		<span>-7%</span>
 		        	</div>
 		        	<p>Giá phòng mỗi đêm chỉ từ</p>
@@ -236,7 +292,7 @@
 			</div>
 			<div class="search-content">
 				<div class="search-content-l">
-					<div class="search-content-img"><img src="../img/hotel/search/hotel.png"></div>
+					<div class="search-content-img"><img src="img/hotel/search/hotel.png"></div>
 			        <div class="search-content-infor">
 			        	<div class="bd">
 				        	<h5>Shilla Monogram Quangnam Danang</h5>
@@ -253,17 +309,17 @@
 				            	<label class="type">Khách sạn</label>            
 				            </div>
 				            <div class="location">
-				            	<img src="../img/hotel/search/location.png" alt="">
+				            	<img src="img/hotel/search/location.png" alt="">
 				            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
 				            </div>       
 			        	</div> 
 			        	<div class="search-service">
 				        	<div class="fl-l">
-				        		<img src="../img/hotel/search/eat.png">
+				        		<img src="img/hotel/search/eat.png">
 				        		<span>Bữa sáng</span>
 				        	</div>
 				        	<div class="fl-l">
-				        		<img src="../img/hotel/search/gym.png">
+				        		<img src="img/hotel/search/gym.png">
 				        		<span>Phòng gym</span>
 				        	</div>
 				        	<div class="add fl-l">
@@ -275,57 +331,7 @@
 				
 		        <div class="search-content-r">
 		        	<div class="search-sale">
-		        		<img class="fl-l" src="../img/hotel/search/sale.png">
-		        		<span>-7%</span>
-		        	</div>
-		        	
-		        	<p>Giá phòng mỗi đêm chỉ từ</p>
-		        	<h6>2.550.000đ</h6>
-		        	<a href="hotel-detail.html"><div class="button-box">Chọn phòng ></div></a>
-		        </div>
-			</div>
-			<div class="search-content">
-				<div class="search-content-l">
-					<div class="search-content-img"><img src="../img/hotel/search/hotel.png"></div>
-			        <div class="search-content-infor">
-			        	<div class="bd">
-				        	<h5>Shilla Monogram Quangnam Danang</h5>
-				            <div class="star">
-				            	<div class="fl-l">
-				            		<label class="bb-star">
-					                <i class="c-star fa fa-star" rel="5"></i>
-					                <i class="c-star fa fa-star" rel="4"></i>
-					                <i class="c-star fa fa-star" rel="3"></i>
-					                <i class="c-star fa fa-star" rel="2"></i>
-					                <i class="c-star fa fa-star" rel="1"></i>
-				            		</label>
-				            	</div>
-				            	<label class="type">Khách sạn</label>            
-				            </div>
-				            <div class="location">
-				            	<img src="../img/hotel/search/location.png" alt="">
-				            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
-				            </div>       
-			        	</div> 
-			        	<div class="search-service">
-				        	<div class="fl-l">
-				        		<img src="../img/hotel/search/eat.png">
-				        		<span>Bữa sáng</span>
-				        	</div>
-				        	<div class="fl-l">
-				        		<img src="../img/hotel/search/gym.png">
-				        		<span>Phòng gym</span>
-				        	</div>
-				        	<div class="add fl-l">
-				        		<span>+36</span>
-				        	</div>
-			        	</div>  
-			        </div>
-				</div>
-				
-		        <div class="search-content-r">
-		        	<div class="search-sale">
-		        		<img class="fl-l" src="../img/hotel/search/sale.png">
+		        		<img class="fl-l" src="img/hotel/search/sale.png">
 		        		<span>-7%</span>
 		        	</div>
 		        	
@@ -336,7 +342,7 @@
 			</div>
 			<div class="search-content">
 				<div class="search-content-l">
-					<div class="search-content-img"><img src="../img/hotel/search/hotel.png"></div>
+					<div class="search-content-img"><img src="img/hotel/search/hotel.png"></div>
 			        <div class="search-content-infor">
 			        	<div class="bd">
 				        	<h5>Shilla Monogram Quangnam Danang</h5>
@@ -353,17 +359,17 @@
 				            	<label class="type">Khách sạn</label>            
 				            </div>
 				            <div class="location">
-				            	<img src="../img/hotel/search/location.png" alt="">
+				            	<img src="img/hotel/search/location.png" alt="">
 				            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
 				            </div>       
 			        	</div> 
 			        	<div class="search-service">
 				        	<div class="fl-l">
-				        		<img src="../img/hotel/search/eat.png">
+				        		<img src="img/hotel/search/eat.png">
 				        		<span>Bữa sáng</span>
 				        	</div>
 				        	<div class="fl-l">
-				        		<img src="../img/hotel/search/gym.png">
+				        		<img src="img/hotel/search/gym.png">
 				        		<span>Phòng gym</span>
 				        	</div>
 				        	<div class="add fl-l">
@@ -375,7 +381,7 @@
 				
 		        <div class="search-content-r">
 		        	<div class="search-sale">
-		        		<img class="fl-l" src="../img/hotel/search/sale.png">
+		        		<img class="fl-l" src="img/hotel/search/sale.png">
 		        		<span>-7%</span>
 		        	</div>
 		        	
@@ -386,7 +392,7 @@
 			</div>
 			<div class="search-content">
 				<div class="search-content-l">
-					<div class="search-content-img"><img src="../img/hotel/search/hotel.png"></div>
+					<div class="search-content-img"><img src="img/hotel/search/hotel.png"></div>
 			        <div class="search-content-infor">
 			        	<div class="bd">
 				        	<h5>Shilla Monogram Quangnam Danang</h5>
@@ -403,17 +409,17 @@
 				            	<label class="type">Khách sạn</label>            
 				            </div>
 				            <div class="location">
-				            	<img src="../img/hotel/search/location.png" alt="">
+				            	<img src="img/hotel/search/location.png" alt="">
 				            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
 				            </div>       
 			        	</div> 
 			        	<div class="search-service">
 				        	<div class="fl-l">
-				        		<img src="../img/hotel/search/eat.png">
+				        		<img src="img/hotel/search/eat.png">
 				        		<span>Bữa sáng</span>
 				        	</div>
 				        	<div class="fl-l">
-				        		<img src="../img/hotel/search/gym.png">
+				        		<img src="img/hotel/search/gym.png">
 				        		<span>Phòng gym</span>
 				        	</div>
 				        	<div class="add fl-l">
@@ -425,7 +431,57 @@
 				
 		        <div class="search-content-r">
 		        	<div class="search-sale">
-		        		<img class="fl-l" src="../img/hotel/search/sale.png">
+		        		<img class="fl-l" src="img/hotel/search/sale.png">
+		        		<span>-7%</span>
+		        	</div>
+		        	
+		        	<p>Giá phòng mỗi đêm chỉ từ</p>
+		        	<h6>2.550.000đ</h6>
+		        	<a href="hotel-detail.html"><div class="button-box">Chọn phòng ></div></a>
+		        </div>
+			</div>
+			<div class="search-content">
+				<div class="search-content-l">
+					<div class="search-content-img"><img src="img/hotel/search/hotel.png"></div>
+			        <div class="search-content-infor">
+			        	<div class="bd">
+				        	<h5>Shilla Monogram Quangnam Danang</h5>
+				            <div class="star">
+				            	<div class="fl-l">
+				            		<label class="bb-star">
+					                <i class="c-star fa fa-star" rel="5"></i>
+					                <i class="c-star fa fa-star" rel="4"></i>
+					                <i class="c-star fa fa-star" rel="3"></i>
+					                <i class="c-star fa fa-star" rel="2"></i>
+					                <i class="c-star fa fa-star" rel="1"></i>
+				            		</label>
+				            	</div>
+				            	<label class="type">Khách sạn</label>            
+				            </div>
+				            <div class="location">
+				            	<img src="img/hotel/search/location.png" alt="">
+				            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
+				            </div>       
+			        	</div> 
+			        	<div class="search-service">
+				        	<div class="fl-l">
+				        		<img src="img/hotel/search/eat.png">
+				        		<span>Bữa sáng</span>
+				        	</div>
+				        	<div class="fl-l">
+				        		<img src="img/hotel/search/gym.png">
+				        		<span>Phòng gym</span>
+				        	</div>
+				        	<div class="add fl-l">
+				        		<span>+36</span>
+				        	</div>
+			        	</div>  
+			        </div>
+				</div>
+				
+		        <div class="search-content-r">
+		        	<div class="search-sale">
+		        		<img class="fl-l" src="img/hotel/search/sale.png">
 		        		<span>-7%</span>
 		        	</div>
 		        	
@@ -446,27 +502,28 @@
 		   <a href="#">></a>
 		</div>
 	</section>
+</div>
 <section class="footer">
 	<div class="ft">
 		<div class="ft-content ft-left">
 			<div>
-				<img src="../img/logo.png">
+				<img src="img/logo.png">
 			</div>
 			<h3>Công ty cổ phần du lịch HnN Travel</h3>
 			<ul>
 				<li>
-					<img src="../img/icon/location.png">
+					<img src="img/icon/location.png">
 					<p>215 Nguyễn Hữu Thọ, Hải Châu, Đà Nẵng</p>
 				</li>
 				<li>
-					<img src="../img/icon/icon-call.svg">
+					<img src="img/icon/icon-call.svg">
 					<p>(+84) 236 123 4567</p>
 				</li>
 				<li>
-					<img src="../img/icon/icon-mail.svg">
+					<img src="img/icon/icon-mail.svg">
 					<p>info@hnntravel.com</p>
 				</li>
-				<li><img src="../img/home/footer/Capture.png"></li>
+				<li><img src="img/home/footer/Capture.png"></li>
 			</ul>
 		</div>
 		<div class="ft-content">
@@ -485,15 +542,15 @@
 				<label>Theo dõi chúng tôi trên</label>
 				<ul class="ft-follow">
 					<li>
-						<img src="../img/icon/fb.png">
+						<img src="img/icon/fb.png">
 						<p>Facebook</p>
 					</li>
 					<li>
-						<img src="../img/icon/ig.png">
+						<img src="img/icon/ig.png">
 						<p>Intagram</p>
 					</li>
 					<li>
-						<img src="../img/icon/yt.png">
+						<img src="img/icon/yt.png">
 						<p>Youtube</p>
 					</li>
 				</ul>
@@ -519,14 +576,21 @@
 						<input type="text" name="" placeholder="Nhập email của bạn ...">
 					</div>
 					<div class="ft-bt">
-						<div type="submit"><img src="../img/icon/send.png"></div>
+						<div type="submit"><img src="img/icon/send.png"></div>
 					</div>
 				</div>
 			</div>
 			
 		</div>
+		<div class="copyright">
+		<div class="copyright-left">
+			<span>Copyright© 2022 <b>HnN TRAVEL</b>. All rights reserved.  </span>
+		</div>
+		<div class="copyright-right">
+			<span>Designed and Maintained by</span><img src="img/dana.png">
+		</div>
+	</div>
 	</div>
 </section>
-</div>
 </body>
 </html>

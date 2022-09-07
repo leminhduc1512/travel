@@ -3,22 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@200;300;400;600;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet"href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"crossorigin="anonymous"/>
 	<link rel="shortcut icon" type="image/x-icon" href="./img/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/flickity.min.css">
+  <script type="text/javascript" src="css/flickity.pkgd.min.js"></script>
 	<title>Hotel|Order</title>
 </head>
-<header class="header">
+<body>
+	<header class="header">
 	<div class="header__menu">
 		<div class="header-left">
 			<div class="od-logo">
-				<a href="index.html"><img src="../img/hotel/order/logo.png"></a>
+				<a href="index.html"><img src="img/hotel/order/logo.png"></a>
 			</div>
 		</div>
 		<div class="h">
@@ -27,7 +27,7 @@
 					<ul class="od">
 						<li><a href="#">
 								<div class="fl-l">
-									<img src="../img/icon/icon-call.svg">
+									<img src="img/icon/icon-call.svg">
 								</div>
 								<span>(+84) 236 123 4567</span>
 							</a>
@@ -38,12 +38,11 @@
 		</div>
 	</div>
 </header>
-<body>
 	<div class="wrapper-od">
 		<section class="section">
 			<div class="six hotel-order-left fl">
 				<div class="border-none">
-					<div class="fl hotel-order-img"><img src="../img/hotel/order/od1.png"></div>
+					<div class="fl hotel-order-img"><img src="img/hotel/order/od1.png"></div>
 					<div class="order-infor-text fl">
 						<h5>InterContinental Danang Sun Peninsula Resort</h5>
 						<div class="star">
@@ -56,7 +55,7 @@
 	            			</label>
 						</div>
 	            		<div class="adress">
-	            			<img src="../img/hotel/detail/location.png">
+	            			<img src="img/hotel/detail/location.png">
 	            			<span>105 Võ Nguyên Giáp, Khuê Mỹ, Ngũ Hành Sơn, Đà Nẵng</span>
 	            		</div>
 	            		<div class="order-date">
@@ -64,7 +63,7 @@
 		            			<label class="date">
 		            				<span>Nhận phòng </span><br>
 	            					<div class="fl">
-	            						<img src="../img/hotel/order/date.png">
+	            						<img src="img/hotel/order/date.png">
 	            						<input placeholder="Từ ngày" name="">
 		            				</div>
 		            			</label>
@@ -74,7 +73,7 @@
 		            			<label class="date">
 		            				<span>Trả phòng</span><br>
 		            				<div class="fl">
-		            					<img src="../img/hotel/order/date.png">
+		            					<img src="img/hotel/order/date.png">
 		            					<input placeholder="Đến ngày" name="">
 		            				</div>		            				
 		            			</label>
@@ -90,15 +89,15 @@
 	            			<span>Khách và Phòng</span>
 	            			<div class="order-amount">
 	            				<div class="order-amount-infor">
-	            					<img src="../img/hotel/detail/users.png">
+	            					<img src="img/hotel/detail/users.png">
 	            					<label>2 Người lớn, </label>
 	            				</div>
 	            				<div class="order-amount-infor">
-	            					<img src="../img/hotel/order/baby.png">
+	            					<img src="img/hotel/order/baby.png">
 	            					<label>0 Trẻ em,</label>
 	            				</div>
 	            				<div class="order-amount-infor">
-	            					<img src="../img/hotel/order/room.png">
+	            					<img src="img/hotel/order/room.png">
 	            					<label>1 phòng</label>
 	            				</div>
 	            			</div>
@@ -127,12 +126,12 @@
 						<p>Chọn loại giường</p>
 						<div class="check">
 							<input class="fl" type="checkbox" name="">
-							<img class="fl" src="../img/hotel/order/double-bed.png">
+							<img class="fl" src="img/hotel/order/double-bed.png">
 							<label>1 Giường Đôi</label>
 						</div>
 						<div class="rq-special">
 							<h6>Yêu cầu đặt biệt</h6>
-							<img src="../img/hotel/order/x-circle.png">
+							<img src="img/hotel/order/x-circle.png">
 						</div>
 						<div class="rq-special clear">
 							<div class="rq-special-text">
@@ -146,7 +145,7 @@
 									<p class="dk">Điều khoản xuất hoá đơn</p>
 								</div>
 							</div>
-								<img src="../img/hotel/order/x-circle-.png">
+								<img src="img/hotel/order/x-circle-.png">
 						</div>
 					</div>
 					
@@ -154,15 +153,15 @@
 				<div class="border-none">
 					<div class="order-sale">
 						<div class="five fl">
-							<img class="fl-l" src="../img/hotel/order/sale.png">
+							<img class="fl-l" src="img/hotel/order/sale.png">
 							<div class="intro-title">Mã giảm giá</div>
 						</div>
 						<div class=" five fl-r">
 							<div class="order-sale-text">
-								<img src="../img/hotel/order/magiam.svg">
+								<img src="img/hotel/order/magiam.svg">
 								<h6>CHAODANANG</h6>
 							</div>
-								<img class="pen" src="../img/hotel/order/pen.png">
+								<img class="pen" src="img/hotel/order/pen.png">
 						</div>
 					</div>
 					
@@ -187,48 +186,48 @@
 				<div class="border-none">
 					<div class="right-infor">
 						<div class="name">
-							<img class="name-sale" src="../img/home/deal/sale.png">
+							<img class="name-sale" src="img/home/deal/sale.png">
 							<p>-5%</p>
-							<img src="../img/hotel/order/od2.png">
+							<img src="img/hotel/order/od2.png">
 							<h5>Deluxe King</h5>
 						</div>
 						<div>
 							<div class="five fl">
-								<img class="fl-l" src="../img/hotel/order/double-bed.png">
+								<img class="fl-l" src="img/hotel/order/double-bed.png">
 								<p>1 Giường Đôi</p>
 							</div>
 							<div class="five fl">
-								<img class="fl-l" src="../img/hotel/detail/users.png">
+								<img class="fl-l" src="img/hotel/detail/users.png">
 								<p>2 Người Lớn</p>
 							</div>
 						</div>
 						<div class="clear right-infor-service">
 							<div class="clear pad">
-								<img class="fl-l" src="../img/icon/eat.png">
+								<img class="fl-l" src="img/icon/eat.png">
 								<p class="green">Bữa sáng miễn phí</p>
 							</div>
 							<div class="clear pad">
-								<img class="fl-l" src="../img/icon/wifi.png">
+								<img class="fl-l" src="img/icon/wifi.png">
 								<p class="green">Wifi miễn phí</p>
 							</div>
 							<div class="clear pad">
-								<img class="fl-l" src="../img/icon/no-smoking.png">
+								<img class="fl-l" src="img/icon/no-smoking.png">
 								<p class="red">Không hút thuốc</p>
 							</div>
 							<div class="clear pad">
-								<img class="fl-l" src="../img/icon/infor.png">
+								<img class="fl-l" src="img/icon/infor.png">
 								<p>Chính sách hành khách và trẻ em</p>
 							</div>
 							<div class="clear pad">
-								<img class="fl-l" src="../img/icon/infor.png">
+								<img class="fl-l" src="img/icon/infor.png">
 								<p>Chính sách huỷ phòng</p>
 							</div>
 							<div class="clear pad">
-								<img class="fl-l" src="../img/icon/thunder.png">
+								<img class="fl-l" src="img/icon/thunder.png">
 								<p class="orange">Xác nhận đặt phòng trong 30 phút</p>
 							</div>
 							<div class="clear check">
-								<img class="fl-l" src="../img/icon/check.png">
+								<img class="fl-l" src="img/icon/check.png">
 								<p class="orange">Phòng trống sẽ được xác nhận sớm</p>
 							</div>
 						</div>
@@ -269,23 +268,23 @@
 	<div class="ft">
 		<div class="ft-content ft-left">
 			<div>
-				<img src="../img/logo.png">
+				<img src="img/logo.png">
 			</div>
 			<h3>Công ty cổ phần du lịch HnN Travel</h3>
 			<ul>
 				<li>
-					<img src="../img/icon/location.png">
+					<img src="img/icon/location.png">
 					<p>215 Nguyễn Hữu Thọ, Hải Châu, Đà Nẵng</p>
 				</li>
 				<li>
-					<img src="../img/icon/icon-call.svg">
+					<img src="img/icon/icon-call.svg">
 					<p>(+84) 236 123 4567</p>
 				</li>
 				<li>
-					<img src="../img/icon/icon-mail.svg">
+					<img src="img/icon/icon-mail.svg">
 					<p>info@hnntravel.com</p>
 				</li>
-				<li><img src="../img/home/footer/Capture.png"></li>
+				<li><img src="img/home/footer/Capture.png"></li>
 			</ul>
 		</div>
 		<div class="ft-content">
@@ -304,15 +303,15 @@
 				<label>Theo dõi chúng tôi trên</label>
 				<ul class="ft-follow">
 					<li>
-						<img src="../img/icon/fb.png">
+						<img src="img/icon/fb.png">
 						<p>Facebook</p>
 					</li>
 					<li>
-						<img src="../img/icon/ig.png">
+						<img src="img/icon/ig.png">
 						<p>Intagram</p>
 					</li>
 					<li>
-						<img src="../img/icon/yt.png">
+						<img src="img/icon/yt.png">
 						<p>Youtube</p>
 					</li>
 				</ul>
@@ -338,11 +337,19 @@
 						<input type="text" name="" placeholder="Nhập email của bạn ...">
 					</div>
 					<div class="ft-bt">
-						<div type="submit"><img src="../img/icon/send.png"></div>
+						<div type="submit"><img src="img/icon/send.png"></div>
 					</div>
 				</div>
 			</div>
 			
+		</div>
+		<div class="copyright">
+			<div class="copyright-left">
+				<span>Copyright© 2022 <b>HnN TRAVEL</b>. All rights reserved.  </span>
+			</div>
+			<div class="copyright-right">
+				<span>Designed and Maintained by</span><img src="img/dana.png">
+			</div>
 		</div>
 	</div>
 </section>

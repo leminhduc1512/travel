@@ -3,22 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@200;300;400;600;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
-	<link rel="stylesheet"href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"crossorigin="anonymous"/>
-	<link rel="shortcut icon" type="image/x-icon" href="./img/logo.png">
+	 <link rel="stylesheet"href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"crossorigin="anonymous"/>
+	 <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/flickity.min.css">
+  <script type="text/javascript" src="css/flickity.pkgd.min.js"></script>
 	<title>Hotel|Detail</title>
 </head>
-<header class="header">
+<body>
+	<header class="header">
 	<div class="header__menu">
 		<div class="header-left">
 			<div >
-				<a href="index.html"><img src="../img/logo.png"></a>
+				<a href="index.html"><img src="img/logo.png"></a>
 			</div>
 		</div>
 		<div class="header-right">
@@ -26,14 +26,14 @@
 				<ul>
 					<li><a href="#">
 							<div class="fl-l">
-								<img src="../img/icon/icon-mail.svg"/>
+								<img src="img/icon/icon-mail.svg"/>
 							</div>
 							<span>info@hnntravel.com</span>
 						</a>
 					</li>
 					<li><a href="#">
 							<div class="fl-l">
-								<img src="../img/icon/icon-call.svg">
+								<img src="img/icon/icon-call.svg">
 							</div>
 							<span>(+84) 236 123 4567</span>
 						</a>
@@ -50,18 +50,18 @@
 					<li><a href="feedback.html">ĐÁNH GIÁ</a></li>
 					<li><a href="contact.html">LIÊN HỆ</a></li>
 					<li>
-	                    <select style="border: none;">
-	                        <option>VN</option>
-	                        <option>EN</option>
-	                    </select>
-					</li>
+							<span><img src="img/vi.png"></span>
+	              <select class="lang">
+	                  <option></option>
+	                  <option></option>
+	              </select>
+						</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 		
 </header>
-<body>
 <input type="checkbox"name="open"id="open">
 <div class="wrapper">
 	<nav class="slidebar">
@@ -72,7 +72,7 @@
         <div class="menu">
           <div class="logo">
             <a href="#">
-              <img src="../img/logo.png"alt="">
+              <img src="img/logo.png"alt="">
             </a>
           </div>
           <ul>
@@ -89,11 +89,54 @@
         </div>
 		</div>
      <div class="mobi-logo">
-     	<a href="index.html"><img src="../img/logo.png"></a>
+     	<a href="index.html"><img src="img/logo.png"></a>
      </div>   
     </nav>
-	<section>
-		<div class="slide-home"><img class="img fl-l" src="../img/hotel/search/banner.png"/></div>
+	<section class="header-slide">
+		<div class="slide-home"><img class="img fl-l" src="img/hotel/search/banner.png"/></div>
+		<section class="banner-header">
+			<div class="banner-home">
+			<div class="select-search">
+				<form method="post">
+					<div class="select-box">
+						<h6>Địa điểm</h6>
+						<img src="img/home/banner/location.png">
+						<input type="text" name="" placeholder="Bạn muốn đi đâu?">
+						
+					</div>
+					<div class ="select-box">
+						<h6>Chất lượng phòng</h6> 
+						<img src="img/home/banner/like.png">
+						<select>
+	              <option value="">Chất lượng phòng</option>
+	              <option value="5">Khách sạn 5 sao</option>
+	              <option value="4">Khách sạn 4 sao</option>
+	              <option value="3">Khách sạn 3 sao</option>
+	              <option value="2">Khách sạn 2 sao</option>
+	              <option value="1">Khách sạn 1 sao</option>
+	          </select>
+	                   
+					</div>
+					<div class="select-box">
+						<h6>Mức giá</h6>
+						<img src="img/home/banner/price.png">
+                        <select>
+                            <option value="">Tất cả</option>
+                            <option value="1">Từ 0đ đến 1.000.000đ</option>
+                            <option value="2">Từ 1.000.000đ đến 5.000.000đ</option>
+                            <option value="3">Trên 5.000.000đ</option>
+                        </select>
+                        
+					</div>
+					<a href="hotel-search.html">
+						<div class="button-header">
+							<img src="img/home/banner/search.png">
+							<div class="button-box">Tìm khách sạn</div>
+						</div>
+					</a>
+				</form>
+			</div>
+		</section>
 	</section>
 	<div class="clear width">
 		<div class="fl-l">Trang chủ  ></div>
@@ -118,7 +161,7 @@
 	            	<label class="type">Khách sạn</label>            
 	            </div>
 	            <div class="location">
-	            	<img src="../img/hotel/detail/location.png" alt="">
+	            	<img src="img/hotel/detail/location.png" alt="">
 	            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
 	            </div> 
 			</div>
@@ -132,11 +175,11 @@
 			      
    		</div>
         <div class="detail-img">
-        	<div class="fl"><img src="../img/hotel/detail/1.png"></div>
-        	<div class="fl"><img src="../img/hotel/detail/2.png"></div>
-        	<div class="fl"><img src="../img/hotel/detail/3.png"></div>
-        	<div class="fl"><img src="../img/hotel/detail/4.png"></div>
-        	<div class="fl"><img src="../img/hotel/detail/5.png"></div>
+        	<div class="fl"><img src="img/hotel/detail/1.png"></div>
+        	<div class="fl"><img src="img/hotel/detail/2.png"></div>
+        	<div class="fl"><img src="img/hotel/detail/3.png"></div>
+        	<div class="fl"><img src="img/hotel/detail/4.png"></div>
+        	<div class="fl"><img src="img/hotel/detail/5.png"></div>
         </div>
         <div>
         	<div class="detail-left fl-l">
@@ -147,39 +190,39 @@
 	        	<div class="detail-title">Tiện nghi khách sạn</div>
 	        	<div class="border">
 	        		<div class="detail-txt">
-	        			<img src="../img/hotel/detail/bar.png">
+	        			<img src="img/hotel/detail/bar.png">
 	        			<p>Quán bar</p>
 	        		</div>
 	        		<div class="detail-txt">
-	        			<img src="../img/hotel/detail/clean.png">
+	        			<img src="img/hotel/detail/clean.png">
 	        			<p>Dọn phòng hằng ngày</p>
 	        		</div>
 	        		<div class="detail-txt">
-	        			<img src="../img/hotel/search/eat.png">
+	        			<img src="img/hotel/search/eat.png">
 	        			<p>Bữa sáng miễn phí</p>
 	        		</div>
 	        		<div class="detail-txt">
-	        			<img src="../img/hotel/detail/parking.png">
+	        			<img src="img/hotel/detail/parking.png">
 	        			<p>Bãi đỗ xe</p>
 	        		</div>
 	        		<div class="detail-txt">
-	        			<img src="../img/hotel/detail/pool.png">
+	        			<img src="img/hotel/detail/pool.png">
 	        			<p>Hồ bơi riêng</p>
 	        		</div>
 	        		<div class="detail-txt clear">
-	        			<img src="../img/hotel/detail/washing.png">
+	        			<img src="img/hotel/detail/washing.png">
 	        			<p>Dịch vụ giặt là</p>
 	        		</div>
 	        		<div class="detail-txt">
-	        			<img src="../img/hotel/detail/towel.png">
+	        			<img src="img/hotel/detail/towel.png">
 	        			<p>Phòng spa</p>
 	        		</div>
 	        		<div class="detail-txt t">
-	        			<img src="../img/hotel/detail/transfer.png">
+	        			<img src="img/hotel/detail/transfer.png">
 	        			<p>Đưa/ đón khách sân bay</p>
 	        		</div>
 	        		<div class="detail-txt">
-	        			<img src="../img/hotel/search/gym.png">
+	        			<img src="img/hotel/search/gym.png">
 	        			<p>Phòng tập</p>
 	        		</div>
 	        		<div class="detail-txt">
@@ -190,7 +233,7 @@
         	</div>
         	<div class="detail-right">
 	        	<div class="border ">
-	        		<div class="img"><img src="../img/hotel/detail/map.png"></div>
+	        		<div class="img"><img src="img/hotel/detail/map.png"></div>
 	        		<div class="txt">
 	        			<p>Địa điểm nổi bật</p>
 	        			<div class="fl l five"> 
@@ -249,34 +292,34 @@
 				<div class="title">Chọn phòng</div>
 				<div class="border hotel-detail-content">
 					<div class="room-left">
-						<div><img src="../img/hotel/detail/room1.png"></div>
-						<div class="fl room-left-img"><img src="../img/hotel/detail/room2.png"></div>
-						<div class="fl room-left-img"><img src="../img/hotel/detail/room3.png"></div>
-						<div class="fl room-left-img"><img src="../img/hotel/detail/room4.png"></div>
+						<div><img src="img/hotel/detail/room1.png"></div>
+						<div class="room-left-img"><img src="img/hotel/detail/room2.png"></div>
+						<div class="room-left-img"><img src="img/hotel/detail/room3.png"></div>
+						<div class="room-left-img"><img src="img/hotel/detail/room4.png"></div>
 						<p>Xem hình ảnh & tiện nghi</p>
 					</div>
 					<div class="room-right">
 						<div class="room-left-content">
 								<h5>Deluxe King</h5>
 								<div class="room-left-content-title">
-									<span><img src="../img/hotel/detail/double-bed.png">1 Giường Đôi</span>
-									<span><img src="../img/hotel/detail/users.png">2 Người Lớn</span>
+									<span><img src="img/hotel/detail/double-bed.png">1 Giường Đôi</span>
+									<span><img src="img/hotel/detail/users.png">2 Người Lớn</span>
 								</div>
 								<hr/>
 								<div class="room-left-content-left">
-									<p><img src="../img/hotel/search/eat.png">Bữa sáng miễn phí</p>
-									<p><img src="../img/hotel/detail/wifi.png">Wifi miễn phí  </p>
-									<p class="red"> <img src="../img/hotel/detail/no-smoking.png">Không hút thuốc</p>
+									<p><img src="img/hotel/search/eat.png">Bữa sáng miễn phí</p>
+									<p><img src="img/hotel/detail/wifi.png">Wifi miễn phí  </p>
+									<p class="red"> <img src="img/hotel/detail/no-smoking.png">Không hút thuốc</p>
 								</div>
 								<div class="room-left-content-right">
-									<p><img src="../img/hotel/detail/infor.png">Chính sách hành khách và trẻ em</p>
-									<p><img src="../img/hotel/detail/infor.png">Chính sách huỷ phòng</p>
-									<p class="orange"><img src="../img/hotel/detail/thunder.png">Xác nhận đặt phòng trong 30 phút</p>
+									<p><img src="img/hotel/detail/infor.png">Chính sách hành khách và trẻ em</p>
+									<p><img src="img/hotel/detail/infor.png">Chính sách huỷ phòng</p>
+									<p class="orange"><img src="img/hotel/detail/thunder.png">Xác nhận đặt phòng trong 30 phút</p>
 								</div>
 						</div>
 						<div class="room-right-button">
 							<div class="search-sale">
-				        		<img class="fl-l" src="../img/hotel/search/sale.png">
+				        		<img class="fl-l" src="img/hotel/search/sale.png">
 				        		<span>-5%</span>
 			        		</div>
 				        		<h4>12.550.000đ</h4>
@@ -287,34 +330,34 @@
 				</div>
 				<div class="border hotel-detail-content">
 					<div class="room-left">
-						<div><img src="../img/hotel/detail/room1.png"></div>
-						<div class="fl room-left-img"><img src="../img/hotel/detail/room2.png"></div>
-						<div class="fl room-left-img"><img src="../img/hotel/detail/room3.png"></div>
-						<div class="fl room-left-img"><img src="../img/hotel/detail/room4.png"></div>
+						<div><img src="img/hotel/detail/room1.png"></div>
+						<div class="room-left-img"><img src="img/hotel/detail/room2.png"></div>
+						<div class="room-left-img"><img src="img/hotel/detail/room3.png"></div>
+						<div class="room-left-img"><img src="img/hotel/detail/room4.png"></div>
 						<p>Xem hình ảnh & tiện nghi</p>
 					</div>
 					<div class="room-right">
 						<div class="room-left-content">
 								<h5>Deluxe King</h5>
 								<div class="room-left-content-title">
-									<span><img src="../img/hotel/detail/double-bed.png">1 Giường Đôi</span>
-									<span><img src="../img/hotel/detail/users.png">2 Người Lớn</span>
+									<span><img src="img/hotel/detail/double-bed.png">1 Giường Đôi</span>
+									<span><img src="img/hotel/detail/users.png">2 Người Lớn</span>
 								</div>
 								<hr/>
 								<div class="room-left-content-left">
-									<p><img src="../img/hotel/search/eat.png">Bữa sáng miễn phí</p>
-									<p><img src="../img/hotel/detail/wifi.png">Wifi miễn phí  </p>
-									<p class="red"> <img src="../img/hotel/detail/no-smoking.png">Không hút thuốc</p>
+									<p><img src="img/hotel/search/eat.png">Bữa sáng miễn phí</p>
+									<p><img src="img/hotel/detail/wifi.png">Wifi miễn phí  </p>
+									<p class="red"> <img src="img/hotel/detail/no-smoking.png">Không hút thuốc</p>
 								</div>
 								<div class="room-left-content-right">
-									<p><img src="../img/hotel/detail/infor.png">Chính sách hành khách và trẻ em</p>
-									<p><img src="../img/hotel/detail/infor.png">Chính sách huỷ phòng</p>
-									<p class="orange"><img src="../img/hotel/detail/thunder.png">Xác nhận đặt phòng trong 30 phút</p>
+									<p><img src="img/hotel/detail/infor.png">Chính sách hành khách và trẻ em</p>
+									<p><img src="img/hotel/detail/infor.png">Chính sách huỷ phòng</p>
+									<p class="orange"><img src="img/hotel/detail/thunder.png">Xác nhận đặt phòng trong 30 phút</p>
 								</div>
 						</div>
 						<div class="room-right-button">
 							<div class="search-sale">
-				        		<img class="fl-l" src="../img/hotel/search/sale.png">
+				        		<img class="fl-l" src="img/hotel/search/sale.png">
 				        		<span>-5%</span>
 			        		</div>
 				        		<h4>12.550.000đ</h4>
@@ -325,34 +368,34 @@
 				</div>
 				<div class="border hotel-detail-content">
 					<div class="room-left">
-						<div><img src="../img/hotel/detail/room1.png"></div>
-						<div class="fl room-left-img"><img src="../img/hotel/detail/room2.png"></div>
-						<div class="fl room-left-img"><img src="../img/hotel/detail/room3.png"></div>
-						<div class="fl room-left-img"><img src="../img/hotel/detail/room4.png"></div>
+						<div><img src="img/hotel/detail/room1.png"></div>
+						<div class="room-left-img"><img src="img/hotel/detail/room2.png"></div>
+						<div class="room-left-img"><img src="img/hotel/detail/room3.png"></div>
+						<div class="room-left-img"><img src="img/hotel/detail/room4.png"></div>
 						<p>Xem hình ảnh & tiện nghi</p>
 					</div>
 					<div class="room-right">
 						<div class="room-left-content">
 								<h5>Deluxe King</h5>
 								<div class="room-left-content-title">
-									<span><img src="../img/hotel/detail/double-bed.png">1 Giường Đôi</span>
-									<span><img src="../img/hotel/detail/users.png">2 Người Lớn</span>
+									<span><img src="img/hotel/detail/double-bed.png">1 Giường Đôi</span>
+									<span><img src="img/hotel/detail/users.png">2 Người Lớn</span>
 								</div>
 								<hr/>
 								<div class="room-left-content-left">
-									<p><img src="../img/hotel/search/eat.png">Bữa sáng miễn phí</p>
-									<p><img src="../img/hotel/detail/wifi.png">Wifi miễn phí  </p>
-									<p class="red"> <img src="../img/hotel/detail/no-smoking.png">Không hút thuốc</p>
+									<p><img src="img/hotel/search/eat.png">Bữa sáng miễn phí</p>
+									<p><img src="img/hotel/detail/wifi.png">Wifi miễn phí  </p>
+									<p class="red"> <img src="img/hotel/detail/no-smoking.png">Không hút thuốc</p>
 								</div>
 								<div class="room-left-content-right">
-									<p><img src="../img/hotel/detail/infor.png">Chính sách hành khách và trẻ em</p>
-									<p><img src="../img/hotel/detail/infor.png">Chính sách huỷ phòng</p>
-									<p class="orange"><img src="../img/hotel/detail/thunder.png">Xác nhận đặt phòng trong 30 phút</p>
+									<p><img src="img/hotel/detail/infor.png">Chính sách hành khách và trẻ em</p>
+									<p><img src="img/hotel/detail/infor.png">Chính sách huỷ phòng</p>
+									<p class="orange"><img src="img/hotel/detail/thunder.png">Xác nhận đặt phòng trong 30 phút</p>
 								</div>
 						</div>
 						<div class="room-right-button">
 							<div class="search-sale">
-				        		<img class="fl-l" src="../img/hotel/search/sale.png">
+				        		<img class="fl-l" src="img/hotel/search/sale.png">
 				        		<span>-5%</span>
 			        		</div>
 				        		<h4>12.550.000đ</h4>
@@ -363,34 +406,34 @@
 				</div>
 				<div class="border hotel-detail-content">
 					<div class="room-left">
-						<div><img src="../img/hotel/detail/room1.png"></div>
-						<div class="fl room-left-img"><img src="../img/hotel/detail/room2.png"></div>
-						<div class="fl room-left-img"><img src="../img/hotel/detail/room3.png"></div>
-						<div class="fl room-left-img"><img src="../img/hotel/detail/room4.png"></div>
+						<div><img src="img/hotel/detail/room1.png"></div>
+						<div class="room-left-img"><img src="img/hotel/detail/room2.png"></div>
+						<div class="room-left-img"><img src="img/hotel/detail/room3.png"></div>
+						<div class="room-left-img"><img src="img/hotel/detail/room4.png"></div>
 						<p>Xem hình ảnh & tiện nghi</p>
 					</div>
 					<div class="room-right">
 						<div class="room-left-content">
 								<h5>Deluxe King</h5>
 								<div class="room-left-content-title">
-									<span><img src="../img/hotel/detail/double-bed.png">1 Giường Đôi</span>
-									<span><img src="../img/hotel/detail/users.png">2 Người Lớn</span>
+									<span><img src="img/hotel/detail/double-bed.png">1 Giường Đôi</span>
+									<span><img src="img/hotel/detail/users.png">2 Người Lớn</span>
 								</div>
 								<hr/>
 								<div class="room-left-content-left">
-									<p><img src="../img/hotel/search/eat.png">Bữa sáng miễn phí</p>
-									<p><img src="../img/hotel/detail/wifi.png">Wifi miễn phí  </p>
-									<p class="red"> <img src="../img/hotel/detail/no-smoking.png">Không hút thuốc</p>
+									<p><img src="img/hotel/search/eat.png">Bữa sáng miễn phí</p>
+									<p><img src="img/hotel/detail/wifi.png">Wifi miễn phí  </p>
+									<p class="red"> <img src="img/hotel/detail/no-smoking.png">Không hút thuốc</p>
 								</div>
 								<div class="room-left-content-right">
-									<p><img src="../img/hotel/detail/infor.png">Chính sách hành khách và trẻ em</p>
-									<p><img src="../img/hotel/detail/infor.png">Chính sách huỷ phòng</p>
-									<p class="orange"><img src="../img/hotel/detail/thunder.png">Xác nhận đặt phòng trong 30 phút</p>
+									<p><img src="img/hotel/detail/infor.png">Chính sách hành khách và trẻ em</p>
+									<p><img src="img/hotel/detail/infor.png">Chính sách huỷ phòng</p>
+									<p class="orange"><img src="img/hotel/detail/thunder.png">Xác nhận đặt phòng trong 30 phút</p>
 								</div>
 						</div>
 						<div class="room-right-button">
 							<div class="search-sale">
-				        		<img class="fl-l" src="../img/hotel/search/sale.png">
+				        		<img class="fl-l" src="img/hotel/search/sale.png">
 				        		<span>-5%</span>
 			        		</div>
 				        		<h4>12.550.000đ</h4>
@@ -440,10 +483,10 @@
 	<section class="section">
 		<div class="title">Những gợi ý khác dành cho bạn</div>
 		<a href="hotel-detail.html"><div class="deal-hotel">
-	        <div>
-	        	<img class="deal-sale" src="../img/home/deal/sale.png">
+	        <div class="hotel-sale">
+	        	<img class="deal-sale" src="img/home/deal/sale.png">
 	        	<p class="deal-sale">-25%</p>
-	        	<img src="../img/home/deal/deal.png">
+	        	<img src="img/home/deal/deal.png">
 	        </div>
 	        <div class="deal-hotel-content">
 	            <h5>Shilla Monogram Quangnam Danang</h5>
@@ -458,17 +501,17 @@
 	            	<label class="txt">Khu nghỉ dưỡng</label>            
 	            </div>
 	            <div class="adr">
-	            	<img src="../img/home/deal/location.png" alt="">
+	            	<img src="img/home/deal/location.png" alt="">
 	            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
 	            </div>            
 	            <p class="deal-price">2.550.000đ</p>
 	        </div>
 		</div></a>
 	    <a href="hotel-detail.html"><div class="deal-hotel">
-	        <div>
-	        	<img class="deal-sale" src="../img/home/deal/sale.png">
+	        <div class="hotel-sale">
+	        	<img class="deal-sale" src="img/home/deal/sale.png">
 	        	<p class="deal-sale">-25%</p>
-	        	<img src="../img/home/deal/deal.png">
+	        	<img src="img/home/deal/deal.png">
 	        </div>
 	        <div class="deal-hotel-content">
 	            <h5>Shilla Monogram Quangnam Danang</h5>
@@ -483,17 +526,17 @@
 	            	<label class="txt">Khu nghỉ dưỡng</label>            
 	            </div>
 	            <div class="adr">
-	            	<img src="../img/home/deal/location.png" alt="">
+	            	<img src="img/home/deal/location.png" alt="">
 	            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
 	            </div>            
 	            <p class="deal-price">2.550.000đ</p>
 	        </div>
 		</div></a>
 		<a href="hotel-detail.html"><div class="deal-hotel">
-	        <div>
-	        	<img class="deal-sale" src="../img/home/deal/sale.png">
+	        <div class="hotel-sale">
+	        	<img class="deal-sale" src="img/home/deal/sale.png">
 	        	<p class="deal-sale">-25%</p>
-	        	<img src="../img/home/deal/deal.png">
+	        	<img src="img/home/deal/deal.png">
 	        </div>
 	        <div class="deal-hotel-content">
 	            <h5>Shilla Monogram Quangnam Danang</h5>
@@ -508,17 +551,17 @@
 	            	<label class="txt">Khu nghỉ dưỡng</label>            
 	            </div>
 	            <div class="adr">
-	            	<img src="../img/home/deal/location.png" alt="">
+	            	<img src="img/home/deal/location.png" alt="">
 	            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
 	            </div>            
 	            <p class="deal-price">2.550.000đ</p>
 	        </div>
 		</div></a>
 		<a href="hotel-detail.html"><div class="deal-hotel">
-	        <div>
-	        	<img class="deal-sale" src="../img/home/deal/sale.png">
+	        <div class="hotel-sale">
+	        	<img class="deal-sale" src="img/home/deal/sale.png">
 	        	<p class="deal-sale">-25%</p>
-	        	<img src="../img/home/deal/deal.png">
+	        	<img src="img/home/deal/deal.png">
 	        </div>
 	        <div class="deal-hotel-content">
 	            <h5>Shilla Monogram Quangnam Danang</h5>
@@ -533,34 +576,35 @@
 	            	<label class="txt">Khu nghỉ dưỡng</label>            
 	            </div>
 	            <div class="adr">
-	            	<img src="../img/home/deal/location.png" alt="">
+	            	<img src="img/home/deal/location.png" alt="">
 	            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
 	            </div>            
 	            <p class="deal-price">2.550.000đ</p>
 	        </div>
 		</div></a>
 	</section>
+</div>
 <section class="footer">
 	<div class="ft">
 		<div class="ft-content ft-left">
 			<div>
-				<img src="../img/logo.png">
+				<img src="img/logo.png">
 			</div>
 			<h3>Công ty cổ phần du lịch HnN Travel</h3>
 			<ul>
 				<li>
-					<img src="../img/icon/location.png">
+					<img src="img/icon/location.png">
 					<p>215 Nguyễn Hữu Thọ, Hải Châu, Đà Nẵng</p>
 				</li>
 				<li>
-					<img src="../img/icon/icon-call.svg">
+					<img src="img/icon/icon-call.svg">
 					<p>(+84) 236 123 4567</p>
 				</li>
 				<li>
-					<img src="../img/icon/icon-mail.svg">
+					<img src="img/icon/icon-mail.svg">
 					<p>info@hnntravel.com</p>
 				</li>
-				<li><img src="../img/home/footer/Capture.png"></li>
+				<li><img src="img/home/footer/Capture.png"></li>
 			</ul>
 		</div>
 		<div class="ft-content">
@@ -579,15 +623,15 @@
 				<label>Theo dõi chúng tôi trên</label>
 				<ul class="ft-follow">
 					<li>
-						<img src="../img/icon/fb.png">
+						<img src="img/icon/fb.png">
 						<p>Facebook</p>
 					</li>
 					<li>
-						<img src="../img/icon/ig.png">
+						<img src="img/icon/ig.png">
 						<p>Intagram</p>
 					</li>
 					<li>
-						<img src="../img/icon/yt.png">
+						<img src="img/icon/yt.png">
 						<p>Youtube</p>
 					</li>
 				</ul>
@@ -613,14 +657,21 @@
 						<input type="text" name="" placeholder="Nhập email của bạn ...">
 					</div>
 					<div class="ft-bt">
-						<div type="submit"><img src="../img/icon/send.png"></div>
+						<div type="submit"><img src="img/icon/send.png"></div>
 					</div>
 				</div>
 			</div>
 			
 		</div>
+		<div class="copyright">
+		<div class="copyright-left">
+			<span>Copyright© 2022 <b>HnN TRAVEL</b>. All rights reserved.  </span>
+		</div>
+		<div class="copyright-right">
+			<span>Designed and Maintained by</span><img src="img/dana.png">
+		</div>
+	</div>
 	</div>
 </section>
-</div>
 </body>
 </html>

@@ -5,20 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet"href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"crossorigin="anonymous"/>
 	<link rel="shortcut icon" type="image/x-icon" href="./img/logo.png">
-	<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@200;300;400;600;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<title>Restaurants</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Restaurants|Search</title>
 </head>
-<header class="header">
+
+<body>
+	<header class="header">
 	<div class="header__menu">
 		<div class="header-left">
 			<div >
-				<a href="index.html"><img src="../img/logo.png"></a>
+				<a href="index.html"><img src="img/logo.png"></a>
 			</div>
 		</div>
 		<div class="header-right">
@@ -26,14 +25,14 @@
 				<ul>
 					<li><a href="#">
 							<div class="fl-l">
-								<img src="../img/icon/icon-mail.svg"/>
+								<img src="img/icon/icon-mail.svg"/>
 							</div>
 							<span>info@hnntravel.com</span>
 						</a>
 					</li>
 					<li><a href="#">
 							<div class="fl-l">
-								<img src="../img/icon/icon-call.svg">
+								<img src="img/icon/icon-call.svg">
 							</div>
 							<span>(+84) 236 123 4567</span>
 						</a>
@@ -50,18 +49,17 @@
 					<li><a href="feedback.html">ĐÁNH GIÁ</a></li>
 					<li><a href="contact.html">LIÊN HỆ</a></li>
 					<li>
-	                    <select style="border: none;">
-	                        <option>VN</option>
-	                        <option>EN</option>
-	                    </select>
-					</li>
+							<span><img src="img/vi.png"></span>
+	              <select class="lang">
+	                  <option></option>
+	                  <option></option>
+	              </select>
+						</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-		
 </header>
-<body>
 <input type="checkbox"name="open"id="open">
 <div class="wrapper">
 	<nav class="slidebar">
@@ -72,7 +70,7 @@
         <div class="menu">
           <div class="logo">
             <a href="#">
-              <img src="../img/logo.png"alt="">
+              <img src="img/logo.png"alt="">
             </a>
           </div>
           <ul>
@@ -89,23 +87,23 @@
         </div>
 		</div>
      <div class="mobi-logo">
-     	<a href="index.html"><img src="../img/logo.png"></a>
+     	<a href="index.html"><img src="img/logo.png"></a>
      </div>   
     </nav>
 	<section class="header-slide">
 		<div id="carousel-simple" class="carousel slide" data-ride="carousel">
 	    	<div class="carousel-inner" role="listbox">
 		        <div class="item active">
-		          <img src="../img/restaurants/slide.png" alt="">
+		          <img src="img/restaurants/slide.png" alt="">
 		        </div>
 		        <div class="item">
-		          <img src="../img/restaurants/slide.png" alt="">
+		          <img src="img/restaurants/slide.png" alt="">
 		        </div>
 		         <div class="item">
-		          <img src="../img/restaurants/slide.png" alt="">
+		          <img src="img/restaurants/slide.png" alt="">
 		        </div>
 		         <div class="item">
-		          <img src="../img/restaurants/slide.png" alt="">
+		          <img src="img/restaurants/slide.png" alt="">
 		        </div>
 		    </div>
 	    </div>
@@ -120,13 +118,13 @@
 				<form method="post">
 					<div class="select-box">
 						<h6>Địa điểm</h6>
-						<img src="../img/home/banner/location.png">
+						<img src="img/home/banner/location.png">
 						<input type="text" name="" placeholder="Bạn muốn đi đâu?">
 						
 					</div>
 					<div class ="select-box">
 						<h6>Chất lượng phòng</h6> 
-						<img src="../img/home/banner/like.png">
+						<img src="img/home/banner/like.png">
 						<select>
 				              <option value="">Chất lượng phòng</option>
 				              <option value="5">Khách sạn 5 sao</option>
@@ -139,7 +137,7 @@
 					</div>
 					<div class="select-box">
 						<h6>Mức giá</h6>
-						<img src="../img/home/banner/price.png">
+						<img src="img/home/banner/price.png">
                         <select>
                             <option value="">Tất cả</option>
                             <option value="1">Từ 0đ đến 1.000.000đ</option>
@@ -150,7 +148,7 @@
 					</div>
 					<a href="restaurants-search.html">
 						<div class="button-header">
-							<img src="../img/home/banner/search.png">
+							<img src="img/home/banner/search.png">
 							<div class="button-box">Tìm phòng</div>
 						</div>
 					</a>
@@ -158,9 +156,6 @@
 			</div>
 		</section>
 	</section>
-	<div class="tour-search">
-		<h4>Tour trong nước</h4>
-	</div>
 	<section class="section">
 		<section class="section-left">
 			<div class="search-price">
@@ -177,7 +172,7 @@
 				</form>
 			</div>
 			<div class="search-price">
-				<h6>Hạng khách sạn</h6>
+				<h6>Hạng nhà hàng</h6>
 				<div>
 					<form action="#">
 						<label class="bb-star">
@@ -211,13 +206,17 @@
 				</div>
 			</div>
 			<div class="search-price">
-				<h6>Loại khách sạn</h6>
+				<h6>Trải nghiệm</h6>
 				<div>
 					<form action="#">
 						<input type="checkbox">
-					  	<label><b>Khách sạn</b></label><br>
-					  	<input type="checkbox">
-					  	<label><b>Khu nghỉ dưỡng</b></label><br>
+				  	<label>Buffet</label><br>
+				  	<input type="checkbox">
+				  	<label>Ngoài trời</label><br>
+				  	<input type="checkbox">
+				  	<label>Trà chiều</label><br>
+				  	<input type="checkbox">
+				  	<label>Bar</label><br>
 					</form>
 				</div>
 			</div>
@@ -241,15 +240,18 @@
 			</div>
 		</section>
 		<section class="section-right">
+			<div class="tour-search">
+				<h4>Nhà hàng 5 sao Đà nẵng</h4>
+			</div>
 			<div class="border-white">
 				<a href="restaurants-detail.html"><div class="five restaurants-search-img">
-					<img src="../img/restaurants/search/search1.png">
+					<img src="img/restaurants/search/search1.png">
 				</div>
 				<div class="five restaurants-search-txt">
 					<div class="restaurants-search-content">
 						<h6>Minh Toan SAFI Ocean Hotel</h6></a>
 						<div>
-							<img src="../img/restaurants/home/location.png">
+							<img src="img/restaurants/home/location.png">
 							<label>341 Trần Hưng Đạo, Sơn Trà, An Hải Bắc, Sơn Trà, Đà Nẵng</label>
 						</div>
 						<p>Tận hưởng làn gió biển tươi mát cùng tiệc nướng BBQ với hải sản tươi sống được đánh bắt trong ngày và thịt nướng cao cấp.</p>
@@ -262,13 +264,13 @@
 			</div>
 			<div class="border-white">
 				<a href="restaurants-detail.html"><div class="five restaurants-search-img">
-					<img src="../img/restaurants/search/search2.png">
+					<img src="img/restaurants/search/search2.png">
 				</div>
 				<div class="five restaurants-search-txt">
 					<div class="restaurants-search-content">
 						<h6>Minh Toan SAFI Ocean Hotel</h6></a>
 						<div>
-							<img src="../img/restaurants/home/location.png">
+							<img src="img/restaurants/home/location.png">
 							<label>341 Trần Hưng Đạo, Sơn Trà, An Hải Bắc, Sơn Trà, Đà Nẵng</label>
 						</div>
 						<p>Tận hưởng làn gió biển tươi mát cùng tiệc nướng BBQ với hải sản tươi sống được đánh bắt trong ngày và thịt nướng cao cấp.</p>
@@ -281,13 +283,13 @@
 			</div>
 			<div class="border-white">
 				<div class="five restaurants-search-img ">
-					<img src="../img/restaurants/search/search3.png">
+					<img src="img/restaurants/search/search3.png">
 				</div>
 				<div class="five restaurants-search-txt ">
 					<div class="restaurants-search-content">
 						<h6>Minh Toan SAFI Ocean Hotel</h6>
 						<div>
-							<img src="../img/restaurants/home/location.png">
+							<img src="img/restaurants/home/location.png">
 							<label>341 Trần Hưng Đạo, Sơn Trà, An Hải Bắc, Sơn Trà, Đà Nẵng</label>
 						</div>
 						<p>Tận hưởng làn gió biển tươi mát cùng tiệc nướng BBQ với hải sản tươi sống được đánh bắt trong ngày và thịt nướng cao cấp.</p>
@@ -300,13 +302,13 @@
 			</div>
 			<div class="border-white">
 				<div class="five restaurants-search-img ">
-					<img src="../img/restaurants/search/search4.png">
+					<img src="img/restaurants/search/search4.png">
 				</div>
 				<div class="five restaurants-search-txt ">
 					<div class="restaurants-search-content">
 						<h6>Minh Toan SAFI Ocean Hotel</h6>
 						<div>
-							<img src="../img/restaurants/home/location.png">
+							<img src="img/restaurants/home/location.png">
 							<label>341 Trần Hưng Đạo, Sơn Trà, An Hải Bắc, Sơn Trà, Đà Nẵng</label>
 						</div>
 						<p>Tận hưởng làn gió biển tươi mát cùng tiệc nướng BBQ với hải sản tươi sống được đánh bắt trong ngày và thịt nướng cao cấp.</p>
@@ -319,13 +321,13 @@
 			</div>
 			<div class="border-white">
 				<div class="five restaurants-search-img ">
-					<img src="../img/restaurants/search/search5.png">
+					<img src="img/restaurants/search/search5.png">
 				</div>
 				<div class="five restaurants-search-txt ">
 					<div class="restaurants-search-content">
 						<h6>Minh Toan SAFI Ocean Hotel</h6>
 						<div>
-							<img src="../img/restaurants/home/location.png">
+							<img src="img/restaurants/home/location.png">
 							<label>341 Trần Hưng Đạo, Sơn Trà, An Hải Bắc, Sơn Trà, Đà Nẵng</label>
 						</div>
 						<p>Tận hưởng làn gió biển tươi mát cùng tiệc nướng BBQ với hải sản tươi sống được đánh bắt trong ngày và thịt nướng cao cấp.</p>
@@ -353,23 +355,23 @@
 	<div class="ft">
 		<div class="ft-content ft-left">
 			<div>
-				<img src="../img/logo.png">
+				<img src="img/logo.png">
 			</div>
 			<h3>Công ty cổ phần du lịch HnN Travel</h3>
 			<ul>
 				<li>
-					<img src="../img/icon/location.png">
+					<img src="img/icon/location.png">
 					<p>215 Nguyễn Hữu Thọ, Hải Châu, Đà Nẵng</p>
 				</li>
 				<li>
-					<img src="../img/icon/icon-call.svg">
+					<img src="img/icon/icon-call.svg">
 					<p>(+84) 236 123 4567</p>
 				</li>
 				<li>
-					<img src="../img/icon/icon-mail.svg">
+					<img src="img/icon/icon-mail.svg">
 					<p>info@hnntravel.com</p>
 				</li>
-				<li><img src="../img/home/footer/Capture.png"></li>
+				<li><img src="img/home/footer/Capture.png"></li>
 			</ul>
 		</div>
 		<div class="ft-content">
@@ -388,15 +390,15 @@
 				<label>Theo dõi chúng tôi trên</label>
 				<ul class="ft-follow">
 					<li>
-						<img src="../img/icon/fb.png">
+						<img src="img/icon/fb.png">
 						<p>Facebook</p>
 					</li>
 					<li>
-						<img src="../img/icon/ig.png">
+						<img src="img/icon/ig.png">
 						<p>Intagram</p>
 					</li>
 					<li>
-						<img src="../img/icon/yt.png">
+						<img src="img/icon/yt.png">
 						<p>Youtube</p>
 					</li>
 				</ul>
@@ -422,12 +424,20 @@
 						<input type="text" name="" placeholder="Nhập email của bạn ...">
 					</div>
 					<div class="ft-bt">
-						<div type="submit"><img src="../img/icon/send.png"></div>
+						<div type="submit"><img src="img/icon/send.png"></div>
 					</div>
 				</div>
 			</div>
 			
 		</div>
+		<div class="copyright">
+		<div class="copyright-left">
+			<span>Copyright© 2022 <b>HnN TRAVEL</b>. All rights reserved.  </span>
+		</div>
+		<div class="copyright-right">
+			<span>Designed and Maintained by</span><img src="img/dana.png">
+		</div>
+	</div>
 	</div>
 </section>
 </body>

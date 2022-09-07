@@ -5,65 +5,63 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link rel="stylesheet"href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"crossorigin="anonymous"/>
 	 <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png">
-	<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@200;300;400;600;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="../css/flickity.min.css">
-  <script type="text/javascript" src="../css/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/flickity.min.css">
+  <script type="text/javascript" src="css/flickity.pkgd.min.js"></script>
 	<title>Home</title>
 </head>
-<header class="header">
-	<div class="header__menu">
-		<div class="header-left">
-			<div >
-				<a href="index.html"><img src="../img/logo.png"></a>
-			</div>
-		</div>
-		<div  class="contact-h">
-				<ul>
-					<li><a href="#">
-							<div class="fl-l">
-								<img src="../img/icon/icon-mail.svg"/>
-							</div>
-							<span>info@hnntravel.com</span>
-						</a>
-					</li>
-					<li><a href="#">
-							<div class="fl-l">
-								<img src="../img/icon/icon-call.svg">
-							</div>
-							<span>(+84) 236 123 4567</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		<div class="header-right">
-		 	
-			<div class="list-header">
-				<ul>
-					<li><a href="hotel.html">KHÁCH SẠN</a></li>
-					<li><a href="tour.html">TOUR</a></li>
-					<li><a href="conference.html">HỘI NGHỊ / SỰ KIỆN</a></li>
-					<li><a href="restaurants.html">NHÀ HÀNG / BARS</a></li>
-					<li><a href="guide.html">CẨM NANG DU LỊCH</a></li>
-					<li><a href="feedback.html">ĐÁNH GIÁ</a></li>
-					<li><a href="contact.html">LIÊN HỆ</a></li>
-					<li>
-              <select style="border: none;">
-                  <option>VN</option>
-                  <option>EN</option>
-              </select>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</header>
 <body>
+	<header class="header">
+		<div class="header__menu">
+			<div class="header-left">
+				<div >
+					<a href="index.html"><img src="img/logo.png"></a>
+				</div>
+			</div>
+			<div  class="contact-h">
+					<ul>
+						<li><a href="#">
+								<div class="fl-l">
+									<img src="img/icon/icon-mail.svg"/>
+								</div>
+								<span>info@hnntravel.com</span>
+							</a>
+						</li>
+						<li><a href="#">
+								<div class="fl-l">
+									<img src="img/icon/icon-call.svg">
+								</div>
+								<span>(+84) 236 123 4567</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			<div class="header-right">
+			 	
+				<div class="list-header">
+					<ul>
+						<li><a href="hotel.html">KHÁCH SẠN</a></li>
+						<li><a href="tour.html">TOUR</a></li>
+						<li><a href="conference.html">HỘI NGHỊ / SỰ KIỆN</a></li>
+						<li><a href="restaurants.html">NHÀ HÀNG / BARS</a></li>
+						<li><a href="guide.html">CẨM NANG DU LỊCH</a></li>
+						<li><a href="feedback.html">ĐÁNH GIÁ</a></li>
+						<li><a href="contact.html">LIÊN HỆ</a></li>
+						<li>
+							<span><img src="img/vi.png"></span>
+	              <select class="lang">
+	                  <option></option>
+	                  <option></option>
+	              </select>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
 <input type="checkbox"name="open"id="open">
 <div class="wrapper">
 	<nav class="slidebar">
@@ -74,7 +72,7 @@
         <div class="menu">
           <div class="logo">
             <a href="#">
-              <img src="../img/logo.png"alt="">
+              <img src="img/logo.png"alt="">
             </a>
           </div>
           <ul>
@@ -91,25 +89,41 @@
         </div>
 		</div>
      <div class="mobi-logo">
-     	<a href="index.html"><img src="../img/logo.png"></a>
+     	<a href="index.html"><img src="img/logo.png"></a>
      </div>   
     </nav>
 	<section class="header-slide">
 	    <div id="carousel-simple" class="carousel slide" data-ride="carousel">
+	    	<ol class="carousel-indicators">
+	        <li data-target="#carousel-simple" data-slide-to="0" class="active"></li>
+	        <li data-target="#carousel-simple" data-slide-to="1"></li>
+	        <li data-target="#carousel-simple" data-slide-to="2"></li>
+	        <li data-target="#carousel-simple" data-slide-to="3"></li>
+      	</ol>
 	    	<div class="carousel-inner" role="listbox">
 		        <div class="item active">
-		          <img src="../img/home/slide-home.png" alt="">
+		          <img src="img/home/slide-home.png" alt="">
+		          <div class="carousel-caption"><h6>Hotel</h6></div>
 		        </div>
 		        <div class="item">
-		          <img src="../img/home/slide-home.png" alt="">
+		          <img src="img/home/slide-home.png" alt="">
+		          <div class="carousel-caption"><h6>Hotel</h6></div>
 		        </div>
 		         <div class="item">
-		          <img src="../img/home/slide-home.png" alt="">
+		          <img src="img/home/slide-home.png" alt="">
+		          <div class="carousel-caption"><h6>Hotel</h6></div>
 		        </div>
 		         <div class="item">
-		          <img src="../img/home/slide-home.png" alt="">
+		          <img src="img/home/slide-home.png" alt="">
+		          <div class="carousel-caption"><h6>Hotel</h6></div>
 		        </div>
 		    </div>
+		    <a class="left carousel-control" href="#carousel-simple" role="button" data-slide="prev">
+        	<i class="fa fa-chevron-left" aria-hidden="true"></i>
+      	</a>
+	      <a class="right carousel-control" href="#carousel-simple" role="button" data-slide="next">
+	        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+	      </a>
 	    </div>
 		<section class="banner-header">
 			<div class="banner-home">
@@ -122,13 +136,13 @@
 				<form method="post">
 					<div class="select-box">
 						<h6>Địa điểm</h6>
-						<img src="../img/home/banner/location.png">
+						<img src="img/home/banner/location.png">
 						<input type="text" name="" placeholder="Bạn muốn đi đâu?">
 						
 					</div>
 					<div class ="select-box">
 						<h6>Chất lượng phòng</h6> 
-						<img src="../img/home/banner/like.png">
+						<img src="img/home/banner/like.png">
 						<select>
 	                        <option value="">Chất lượng phòng</option>
 	                        <option value="5">Khách sạn 5 sao</option>
@@ -141,7 +155,7 @@
 					</div>
 					<div class="select-box">
 						<h6>Mức giá</h6>
-						<img src="../img/home/banner/price.png">
+						<img src="img/home/banner/price.png">
                         <select>
                             <option value="">Tất cả</option>
                             <option value="1">Từ 0đ đến 1.000.000đ</option>
@@ -152,7 +166,7 @@
 					</div>
 					<a href="hotel-search.html">
 						<div class="button-header">
-							<img src="../img/home/banner/search.png">
+							<img src="img/home/banner/search.png">
 							<div class="button-box">Tìm khách sạn</div>
 						</div>
 					</a>
@@ -164,26 +178,26 @@
 		<div class="category">
 			<a href="hotel.html">
 				<h6>Khách sạn</h6>
-				<img src="../img/home/category/review.png">
+				<img src="img/home/category/review.png">
 			</a>
 		</div>
 		<div class="category">
 			<a href="tour.html">
 				<h6>Tours</h6>
-				<img src="../img/home/category/landscape.png">
+				<img src="img/home/category/landscape.png">
 			</a>
 			
 		</div>
 		<div class="category">
 			<a href="conference.html">
 				<h6>Hội nghị / Sự kiện</h6>
-				<img src="../img/home/category/conference.png">
+				<img src="img/home/category/conference.png">
 			</a>
 		</div>
 		<div class="category">
 			<a href="restaurants.html">
 				<h6>Nhà hàng / Bars</h6>
-				<img src="../img/home/category/food.png">
+				<img src="img/home/category/food.png">
 			</a>
 		</div>
 	</section>
@@ -192,7 +206,7 @@
 			<div class="category carousel-cell">
 				<a href="hotel.html">
 					<div class="category-img">
-						<img src="../img/home/category/review.png">
+						<img src="img/home/category/review.png">
 					</div>
 					<div class="category-txt">
 						<h6>Khách sạn</h6>
@@ -202,7 +216,7 @@
 			<div class="category carousel-cell">
 				<a href="tour.html">
 					<div class="category-img">
-						<img src="../img/home/category/landscape.png">
+						<img src="img/home/category/landscape.png">
 					</div>
 					<div class="category-txt">
 						<h6>Tours</h6>
@@ -212,7 +226,7 @@
 			<div class="category carousel-cell">
 				<a href="conference.html">
 					<div class="category-img">
-						<img src="../img/home/category/conference.png">
+						<img src="img/home/category/conference.png">
 					</div>
 					<div class="category-txt">
 						<h6>Hội nghị / Sự kiện</h6>
@@ -222,7 +236,7 @@
 			<div class="category carousel-cell">
 				<a href="restaurants.html">
 					<div class="category-img">
-						<img src="../img/home/category/food.png">
+						<img src="img/home/category/food.png">
 					</div>
 					<div class="category-txt">
 						<h6>Nhà hàng / Bars</h6>
@@ -235,45 +249,59 @@
 		<div class="title">
 			Top điểm đến <span>hấp dẫn</span>
 		</div>	
-		<div class="top_place">
-			<div class="carousel" data-flickity='{ "freeScroll": true,"contain": true, "prevNextButtons": false,"pageDots": false}'>
-				<div class="top-place carousel-cell">
+			<div class="carousel top_place" data-flickity='{ "freeScroll": true,"contain": true, "prevNextButtons": true,"pageDots": false, "groupCells":true}'>
+				<div class="carousel-cell top-place">
 					<div>
 						<a href="hotel-search.html">
-							<img src="../img/home/top_place/ha-noi.png">
+							<img src="img/home/top_place/ha-noi.png">
 						<h5>Hà Nội</h5>
 						</a>
 						
 					</div>
 				</div>
-				<div class="top-place carousel-cell">
+				<div class="carousel-cell top-place">
 					<div>
-						<img src="../img/home/top_place/ho-chi-minh.png">
+						<img src="img/home/top_place/ho-chi-minh.png">
 						<h5>Hồ Chí Minh City</h5>
 					</div>
 				</div>
-				<div class="top-place carousel-cell">
+				<div class="carousel-cell top-place">
 					<div>
-						<img src="../img/home/top_place/da-nang.png">
+						<img src="img/home/top_place/da-nang.png">
 						<h5>Đà Nẵng</h5>
 					</div>
 				</div>
-				<div class="top-place carousel-cell">
+				<div class="carousel-cell top-place">
 					<div>
-						<img src="../img/home/top_place/phan-thiet.png">
+						<img src="img/home/top_place/phan-thiet.png">
 						<h5>Phan Thiết</h5>
 					</div>
 				</div>
-				<div class="top-place carousel-cell">
+				<div class="carousel-cell top-place">
 					<div>
-						<img src="../img/home/top_place/phu-quoc.png">
+						<img src="img/home/top_place/phu-quoc.png">
 						<h5>Phú Quốc</h5>
 					</div>
 				</div>
+				<div class="carousel-cell top-place">
+					<div>
+						<img src="img/home/top_place/ho-chi-minh.png">
+						<h5>Hồ Chí Minh City</h5>
+					</div>
+				</div>
+				<div class="carousel-cell top-place">
+					<div>
+						<img src="img/home/top_place/da-nang.png">
+						<h5>Đà Nẵng</h5>
+					</div>
+				</div>
+				<div class="carousel-cell top-place">
+					<div>
+						<img src="img/home/top_place/phan-thiet.png">
+						<h5>Phan Thiết</h5>
+					</div>
+				</div>
 			</div>
-		</div>
-		
-		
 	</section>
 	<div class="deal">
 		<section class="section">
@@ -283,10 +311,10 @@
 			</div>
 			<div class="deal_hotel">
 			    <a href="hotel-detail.html" class="deal-hotel">
-			        <div>
-			        	<img class="deal-sale" src="../img/home/deal/sale.png">
+			        <div class="hotel-sale">
+			        	<img class="deal-sale" src="img/home/deal/sale.png">
 			        	<p class="deal-sale">-25%</p>
-			        	<img src="../img/home/deal/deal.png">
+			        	<img src="img/home/deal/deal.png">
 			        </div>
 			        <div class="deal-txt">
 			            <h5>Shilla Monogram Quangnam Danang</h5>
@@ -301,18 +329,19 @@
 			            	<label class="txt">Khu nghỉ dưỡng</label>            
 			            </div>
 			            <div class="adr">
-			            	<img src="../img/home/deal/location.png" alt="">
+			            	<img src="img/home/deal/location.png" alt="">
 			            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
-			            </div>            
+			            </div>
+			            <span class="price">2.950.000đ</span>          
 			            <p class="deal-price">2.550.000đ</p>
 			            
 			        </div>
 			    </a>
 			    <div class="deal-hotel">
-			        <div>
-			        	<img class="deal-sale" src="../img/home/deal/sale.png">
+			        <div class="hotel-sale">
+			        	<img class="deal-sale" src="img/home/deal/sale.png">
 			        	<p class="deal-sale">-25%</p>
-			        	<img src="../img/home/deal/deal.png">
+			        	<img src="img/home/deal/deal.png">
 			        	 
 			        </div>
 			        <div class="deal-txt">
@@ -328,18 +357,19 @@
 			            	<label class="txt">Khu nghỉ dưỡng</label>            
 			            </div>
 			            <div class="adr">
-			            	<img src="../img/home/deal/location.png" alt="">
+			            	<img src="img/home/deal/location.png" alt="">
 			            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
-			            </div>            
+			             </div>
+			            <span class="price">2.950.000đ</span>          
 			            <p class="deal-price">2.550.000đ</p>
 			            
 			        </div>
 			    </div>
 			    <div class="deal-hotel">
-			        <div>
-			        	<img class="deal-sale" src="../img/home/deal/sale.png">
+			        <div class="hotel-sale">
+			        	<img class="deal-sale" src="img/home/deal/sale.png">
 			        	<p class="deal-sale">-25%</p>
-			        	<img src="../img/home/deal/deal.png">
+			        	<img src="img/home/deal/deal.png">
 			        	 
 			        </div>
 			        <div class="deal-txt">
@@ -355,18 +385,19 @@
 			            	<label class="txt">Khu nghỉ dưỡng</label>            
 			            </div>
 			            <div class="adr">
-			            	<img src="../img/home/deal/location.png" alt="">
+			            	<img src="img/home/deal/location.png" alt="">
 			            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
-			            </div>            
+			             </div>
+			            <span class="price">2.950.000đ</span>          
 			            <p class="deal-price">2.550.000đ</p>
 			            
 			        </div>
 			    </div>
 			    <div class="deal-hotel">
-			        <div>
-			        	<img class="deal-sale" src="../img/home/deal/sale.png">
+			        <div class="hotel-sale">
+			        	<img class="deal-sale" src="img/home/deal/sale.png">
 			        	<p class="deal-sale">-25%</p>
-			        	<img src="../img/home/deal/deal.png">
+			        	<img src="img/home/deal/deal.png">
 			        	 
 			        </div>
 			        <div class="deal-txt">
@@ -382,18 +413,19 @@
 			            	<label class="txt">Khu nghỉ dưỡng</label>            
 			            </div>
 			            <div class="adr">
-			            	<img src="../img/home/deal/location.png" alt="">
+			            	<img src="img/home/deal/location.png" alt="">
 			            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
-			            </div>            
+			             </div>
+			            <span class="price">2.950.000đ</span>          
 			            <p class="deal-price">2.550.000đ</p>
 			            
 			        </div>
 			    </div>
 			    <div class="deal-hotel">
-			        <div>
-			        	<img class="deal-sale" src="../img/home/deal/sale.png">
+			        <div class="hotel-sale">
+			        	<img class="deal-sale" src="img/home/deal/sale.png">
 			        	<p class="deal-sale">-25%</p>
-			        	<img src="../img/home/deal/deal.png">
+			        	<img src="img/home/deal/deal.png">
 			        	 
 			        </div>
 			        <div class="deal-txt">
@@ -409,9 +441,94 @@
 			            	<label class="txt">Khu nghỉ dưỡng</label>            
 			            </div>
 			            <div class="adr">
-			            	<img src="../img/home/deal/location.png" alt="">
+			            	<img src="img/home/deal/location.png" alt="">
 			            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
-			            </div>            
+			             </div>
+			            <span class="price">2.950.000đ</span>          
+			            <p class="deal-price">2.550.000đ</p>
+			            
+			        </div>
+			    </div>
+			    <div class="deal-hotel">
+			        <div class="hotel-sale">
+			        	<img class="deal-sale" src="img/home/deal/sale.png">
+			        	<p class="deal-sale">-25%</p>
+			        	<img src="img/home/deal/deal.png">
+			        	 
+			        </div>
+			        <div class="deal-txt">
+			            <h5>Shilla Monogram Quangnam Danang</h5>
+			            <div class="rate">
+			                <label class="bb-star">
+				                <i class="c-star fa fa-star" rel="5"></i>
+				                <i class="c-star fa fa-star" rel="4"></i>
+				                <i class="c-star fa fa-star" rel="3"></i>
+				                <i class="c-star fa fa-star" rel="2"></i>
+				                <i class="c-star fa fa-star" rel="1"></i>
+			            	</label>
+			            	<label class="txt">Khu nghỉ dưỡng</label>            
+			            </div>
+			            <div class="adr">
+			            	<img src="img/home/deal/location.png" alt="">
+			            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
+			             </div>
+			            <span class="price">2.950.000đ</span>          
+			            <p class="deal-price">2.550.000đ</p>
+			            
+			        </div>
+			    </div>
+			    <div class="deal-hotel">
+			        <div class="hotel-sale">
+			        	<img class="deal-sale" src="img/home/deal/sale.png">
+			        	<p class="deal-sale">-25%</p>
+			        	<img src="img/home/deal/deal.png">
+			        	 
+			        </div>
+			        <div class="deal-txt">
+			            <h5>Shilla Monogram Quangnam Danang</h5>
+			            <div class="rate">
+			                <label class="bb-star">
+				                <i class="c-star fa fa-star" rel="5"></i>
+				                <i class="c-star fa fa-star" rel="4"></i>
+				                <i class="c-star fa fa-star" rel="3"></i>
+				                <i class="c-star fa fa-star" rel="2"></i>
+				                <i class="c-star fa fa-star" rel="1"></i>
+			            	</label>
+			            	<label class="txt">Khu nghỉ dưỡng</label>            
+			            </div>
+			            <div class="adr">
+			            	<img src="img/home/deal/location.png" alt="">
+			            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
+			             </div>
+			            <span class="price">2.950.000đ</span>          
+			            <p class="deal-price">2.550.000đ</p>
+			            
+			        </div>
+			    </div>
+			    <div class="deal-hotel">
+			        <div class="hotel-sale">
+			        	<img class="deal-sale" src="img/home/deal/sale.png">
+			        	<p class="deal-sale">-25%</p>
+			        	<img src="img/home/deal/deal.png">
+			        	 
+			        </div>
+			        <div class="deal-txt">
+			            <h5>Shilla Monogram Quangnam Danang</h5>
+			            <div class="rate">
+			                <label class="bb-star">
+				                <i class="c-star fa fa-star" rel="5"></i>
+				                <i class="c-star fa fa-star" rel="4"></i>
+				                <i class="c-star fa fa-star" rel="3"></i>
+				                <i class="c-star fa fa-star" rel="2"></i>
+				                <i class="c-star fa fa-star" rel="1"></i>
+			            	</label>
+			            	<label class="txt">Khu nghỉ dưỡng</label>            
+			            </div>
+			            <div class="adr">
+			            	<img src="img/home/deal/location.png" alt="">
+			            	<span>Lac Long Quan Street, Dien Ngoc Ward, Dien Ban District, Hội An, Việt Nam </span>
+			             </div>
+			            <span class="price">2.950.000đ</span>          
 			            <p class="deal-price">2.550.000đ</p>
 			            
 			        </div>
@@ -426,60 +543,63 @@
 					Các dịch vụ khác <span>của chúng tôi</span>
 				</div>
 			</div>
-			<div class="other-content">
-				<div class="other-content-img">
-					<img src="../img/home/other/other-1.png">
+			<div class="home-other-service">
+				<div class="other-content">
+					<div class="other-content-img">
+						<img src="img/home/other/other-1.png">
+					</div>
+					<div class="other-content-txt">
+						<h3>HỘI NGHỊ & SỰ KIỆN</h3>
+						<p>
+							Bạn muốn có một không gian riêng biệt chỉ dành cho khách tham dự bữa tiệc của mình.
+							Bạn muốn đãi khách trong một không gian trang trọng, lịch sự với chất lượng dịch vụ đẳng cấp 5 sao nhưng với giá cực kì ưu đãi.
+							HnH sẽ giúp bạn tổ chức những buổi tiệc dễ dàng và tuyệt vời nhất!
+						</p>
+						<a href="conference.html" class="detail-h">
+							<p>Xem chi tiết</p>
+						</a>
+					</div>
+					
 				</div>
-				<div class="other-content-txt">
-					<h3>HỘI NGHỊ & SỰ KIỆN</h3>
-					<p>
-						Bạn muốn có một không gian riêng biệt chỉ dành cho khách tham dự bữa tiệc của mình.
-						Bạn muốn đãi khách trong một không gian trang trọng, lịch sự với chất lượng dịch vụ đẳng cấp 5 sao nhưng với giá cực kì ưu đãi.
-						HnH sẽ giúp bạn tổ chức những buổi tiệc dễ dàng và tuyệt vời nhất!
-					</p>
-					<a href="conference.html" class="detail-h">
-						<p>Xem chi tiết</p>
-					</a>
+				<div class="other-content">
+					<div class="other-content-text other-content-txt">
+						<h3>NHÀ HÀNG & bARS</h3>
+						<p>
+							Voucher được thiết kế dựa trên hình ảnh và thông điệp mà bạn muốn dành tặng cho những người thân thương.
+							Voucher cho những hành trình, trải nghiệm và khoảnh khắc kỳ diệu được trân trọng mãi mãi.
+							Tự tạo món quà độc đáo của riêng bạn dành tặng cho người thân.
+						</p>
+						<a href="restaurants.html" class="detail-h">
+							<p>Xem chi tiết</p>
+						</a>
+					</div>
+					
+					<div class="other-content-img">
+						<img src="img/home/other/other-2.png">
+					</div>
 				</div>
-				
+				<div class="other-content">
+					<div class="other-content-img">
+						<img src="img/home/other/other-3.png">
+					</div>
+					<div class="other-content-txt">
+						<h3>TOURS</h3>
+						<p>
+							Đi chơi đi, chần chừ chi !
+							Trải nghiệm những chuyến đi đầy hấp dẫn và vui nhộn với những địa danh du lịch tuyệt đẹp.
+							Lên rừng xuống biển, trọn vẹn Việt Nam.
+						</p>
+						<a href="tour.html" class="detail-h">
+							<p>Xem chi tiết</p>
+						</a>
+					</div>
+					
+				</div>
 			</div>
-			<div class="other-content">
-				<div class="other-content-text other-content-txt">
-					<h3>NHÀ HÀNG & bARS</h3>
-					<p>
-						Voucher được thiết kế dựa trên hình ảnh và thông điệp mà bạn muốn dành tặng cho những người thân thương.
-						Voucher cho những hành trình, trải nghiệm và khoảnh khắc kỳ diệu được trân trọng mãi mãi.
-						Tự tạo món quà độc đáo của riêng bạn dành tặng cho người thân.
-					</p>
-					<a href="restaurants.html" class="detail-h">
-						<p>Xem chi tiết</p>
-					</a>
-				</div>
-				
-				<div class="other-content-img">
-					<img src="../img/home/other/other-2.png">
-				</div>
-			</div>
-			<div class="other-content">
-				<div class="other-content-img">
-					<img src="../img/home/other/other-3.png">
-				</div>
-				<div class="other-content-txt">
-					<h3>TOURS</h3>
-					<p>
-						Đi chơi đi, chần chừ chi !
-						Trải nghiệm những chuyến đi đầy hấp dẫn và vui nhộn với những địa danh du lịch tuyệt đẹp.
-						Lên rừng xuống biển, trọn vẹn Việt Nam.
-					</p>
-					<a href="tour.html" class="detail-h">
-						<p>Xem chi tiết</p>
-					</a>
-				</div>
-				
-			</div>
+			
 		</section>
 	</div>
-	<section class="section">
+	<section class="section-hnn">
 		<div class="content">
 			<div class="title" style="text-align: center;">
 				Vì sao chọn <span>HnN travel ?</span>
@@ -487,7 +607,7 @@
 			<div class="hnn-content">
 				<div>
 					<div class="hnn-img">
-						<img src="../img/home/hnn_travel/hnn-1.png">
+						<img src="img/home/hnn_travel/hnn-1.png">
 					</div>
 					<div class="hnn-ct">
 						<div>
@@ -505,7 +625,7 @@
 			<div class="hnn-content">
 				<div >
 					<div class="hnn-img">
-						<img src="../img/home/hnn_travel/hnn-2.png">
+						<img src="img/home/hnn_travel/hnn-2.png">
 					</div>
 					<div class="hnn-ct">
 						<div>
@@ -523,7 +643,7 @@
 			<div class="hnn-content">
 				<div>
 					<div class="hnn-img">
-						<img src="../img/home/hnn_travel/hnn-3.png">
+						<img src="img/home/hnn_travel/hnn-3.png">
 					</div>
 					<div class="hnn-ct">
 						<div>
@@ -544,149 +664,167 @@
 			<div class="title" style="text-align: center;">
 				Phản hồi của <span>Khách hàng?</span>
 			</div>
-			<div class="fb-content">
-				<div>
-					<img src="../img/home/feedback/feedback-1.png">
-				</div>
-				<div>
-					<h5>Nguyễn Anh Hoà</h5>
-				</div>
-				<div>
-					<label class="bb-star">
-		                <i class="c-star fa fa-star" rel="5"></i>
-		                <i class="c-star fa fa-star" rel="4"></i>
-		                <i class="c-star fa fa-star" rel="3"></i>
-		                <i class="c-star fa fa-star" rel="2"></i>
-		                <i class="c-star fa fa-star" rel="1"></i>
-		            </label>
-				</div>
-				<div>
-					<p>“ Cảm ơn HnN đã giúp gia đình chúng tôi có một kì nghỉ tuyệt vời với các dịch vụ nhà hàng khách sạn. Nhận viên tư vấn hỗ trợ rất nhiệt tình” </p>
-				</div>
-			</div>
-			<div class="fb-content">
-				<div>
-					<img src="../img/home/feedback/feedback-2.png">
-				</div>
-				<div>
-					<h5>Trần Thuỷ Tiên</h5>
-				</div>
-				<div>
-					<label class="bb-star">
-		                <i class="c-star fa fa-star" rel="5"></i>
-		                <i class="c-star fa fa-star" rel="4"></i>
-		                <i class="c-star fa fa-star" rel="3"></i>
-		                <i class="c-star fa fa-star" rel="2"></i>
-		                <i class="c-star fa fa-star" rel="1"></i>
-		            </label>
-				</div>
-				<div>
-					<p>“ Cảm ơn HnN đã giúp gia đình chúng tôi có một kì nghỉ tuyệt vời với các dịch vụ nhà hàng khách sạn. Nhận viên tư vấn hỗ trợ rất nhiệt tình”</p>
-				</div>
-			</div>
-			<div class="fb-content">
-				<div>
-					<img src="../img/home/feedback/feedback-3.png">
-				</div>
-				<div>
-					<h5>Trần Nam Anh</h5>
-				</div>
-				<div>
-					<label class="bb-star">
-		                <i class="c-star fa fa-star" rel="5"></i>
-		                <i class="c-star fa fa-star" rel="4"></i>
-		                <i class="c-star fa fa-star" rel="3"></i>
-		                <i class="c-star fa fa-star" rel="2"></i>
-		                <i class="c-star fa fa-star" rel="1"></i>
-		            </label>
-				</div>
-				<div>
-					<p>“Cảm ơn HnN đã giúp gia đình chúng tôi có một kì nghỉ tuyệt vời với các dịch vụ nhà hàng khách sạn. Nhận viên tư vấn hỗ trợ rất nhiệt tình”</p>
-				</div>
-			</div>
-		</div>
-	</section>
-		<section class="footer">
-		<div class="ft">
-			<div class="ft-content ft-left">
-				<div>
-					<img src="../img/logo.png">
-				</div>
-				<h3>Công ty cổ phần du lịch HnN Travel</h3>
-				<ul>
-					<li>
-						<img src="../img/icon/location.png">
-						<p>215 Nguyễn Hữu Thọ, Hải Châu, Đà Nẵng</p>
-					</li>
-					<li>
-						<img src="../img/icon/icon-call.svg">
-						<p>(+84) 236 123 4567</p>
-					</li>
-					<li>
-						<img src="../img/icon/icon-mail.svg">
-						<p>info@hnntravel.com</p>
-					</li>
-					<li><img src="../img/home/footer/Capture.png"></li>
-				</ul>
-			</div>
-			<div class="ft-content">
-				<div class="ft-bd">
-					<input type="checkbox" id="ft-about" name="ft-about">
-					<label for="ft-about">Về HnN Travel </label>
-					<ul class="ft-about">
-						<li>Cách đặt chỗ</li>
-						<li>Liên hệ chúng tôi</li>
-						<li>Quy định về thanh toán</li>
-						<li>Trợ giúp</li>
-						<li>Phản hồi của khách hàng</li>
-					</ul>
-				</div>
-				<div class="ft-bd">
-					<label>Theo dõi chúng tôi trên</label>
-					<ul class="ft-follow">
-						<li>
-							<img src="../img/icon/fb.png">
-							<p>Facebook</p>
-						</li>
-						<li>
-							<img src="../img/icon/ig.png">
-							<p>Intagram</p>
-						</li>
-						<li>
-							<img src="../img/icon/yt.png">
-							<p>Youtube</p>
-						</li>
-					</ul>
-				</div>
-				
-			</div>
-			<div class="ft-content">
-				<div class="ft-bd">
-					<input type="checkbox" id="ft-service" name="ft-service">
-					<label for="ft-service">Dịch vụ của chúng tôi</label>
-					<ul class="ft-service">
-						<li>Khách sạn</li>
-						<li>Tours</li>
-						<li>Hội nghị / Sự kiện</li>
-						<li>Nhà hàng / Bar</li>
-					</ul>
-				</div>
-				
-				<div class="ft-s">
-					<label>Đăng ký ngay để nhận thông tin mới nhất!</label>
-					<di>
-						<div class="ft-tx">
-							<input type="text" name="" placeholder="Nhập email của bạn ...">
+			<div class="home-feedback">
+				<div class="fb-content">
+					<div class="fb-content-img">
+						<img src="img/home/feedback/feedback-1.png">
+					</div>
+					<div class="fb-content-txt">
+						<div>
+							<h5>Nguyễn Anh Hoà</h5>
 						</div>
-						<div class="ft-bt">
-							<div type="submit"><img src="../img/icon/send.png"></div>
+						<div>
+							<label class="bb-star">
+				                <i class="c-star fa fa-star" rel="5"></i>
+				                <i class="c-star fa fa-star" rel="4"></i>
+				                <i class="c-star fa fa-star" rel="3"></i>
+				                <i class="c-star fa fa-star" rel="2"></i>
+				                <i class="c-star fa fa-star" rel="1"></i>
+				            </label>
+						</div>
+						<div>
+							<p>“ Cảm ơn HnN đã giúp gia đình chúng tôi có một kì nghỉ tuyệt vời với các dịch vụ nhà hàng khách sạn. Nhận viên tư vấn hỗ trợ rất nhiệt tình” </p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="fb-content">
+					<div class="fb-content-img">
+						<img src="img/home/feedback/feedback-2.png">
+					</div>
+					<div class="fb-content-txt">
+						<div>
+							<h5>Trần Thuỷ Tiên</h5>
+						</div>
+						<div>
+							<label class="bb-star">
+				                <i class="c-star fa fa-star" rel="5"></i>
+				                <i class="c-star fa fa-star" rel="4"></i>
+				                <i class="c-star fa fa-star" rel="3"></i>
+				                <i class="c-star fa fa-star" rel="2"></i>
+				                <i class="c-star fa fa-star" rel="1"></i>
+				            </label>
+						</div>
+						<div>
+							<p>“ Cảm ơn HnN đã giúp gia đình chúng tôi có một kì nghỉ tuyệt vời với các dịch vụ nhà hàng khách sạn. Nhận viên tư vấn hỗ trợ rất nhiệt tình”</p>
 						</div>
 					</div>
 				</div>
-				
+				<div class="fb-content">
+					<div class="fb-content-img">
+						<img src="img/home/feedback/feedback-3.png">
+					</div>
+					<div class="fb-content-txt">
+						<div>
+							<h5>Trần Nam Anh</h5>
+						</div>
+						<div>
+							<label class="bb-star">
+				                <i class="c-star fa fa-star" rel="5"></i>
+				                <i class="c-star fa fa-star" rel="4"></i>
+				                <i class="c-star fa fa-star" rel="3"></i>
+				                <i class="c-star fa fa-star" rel="2"></i>
+				                <i class="c-star fa fa-star" rel="1"></i>
+				            </label>
+						</div>
+						<div>
+							<p>“Cảm ơn HnN đã giúp gia đình chúng tôi có một kì nghỉ tuyệt vời với các dịch vụ nhà hàng khách sạn. Nhận viên tư vấn hỗ trợ rất nhiệt tình”</p>
+						</div>
+					</div>
+				</div>
 			</div>
+			
 		</div>
 	</section>
 </div>
+<section class="footer">
+	<div class="ft">
+		<div class="ft-content ft-left">
+			<div>
+				<img src="img/logo.png">
+			</div>
+			<h3>Công ty cổ phần du lịch HnN Travel</h3>
+			<ul>
+				<li>
+					<img src="img/icon/location.png">
+					<p>215 Nguyễn Hữu Thọ, Hải Châu, Đà Nẵng</p>
+				</li>
+				<li>
+					<img src="img/icon/icon-call.svg">
+					<p>(+84) 236 123 4567</p>
+				</li>
+				<li>
+					<img src="img/icon/icon-mail.svg">
+					<p>info@hnntravel.com</p>
+				</li>
+				<li><img src="img/home/footer/Capture.png"></li>
+			</ul>
+		</div>
+		<div class="ft-content">
+			<div class="ft-bd">
+				<input type="checkbox" id="ft-about" name="ft-about">
+				<label for="ft-about">Về HnN Travel </label>
+				<ul class="ft-about">
+					<li>Cách đặt chỗ</li>
+					<li>Liên hệ chúng tôi</li>
+					<li>Quy định về thanh toán</li>
+					<li>Trợ giúp</li>
+					<li>Phản hồi của khách hàng</li>
+				</ul>
+			</div>
+			<div class="ft-bd">
+				<label>Theo dõi chúng tôi trên</label>
+				<ul class="ft-follow">
+					<li>
+						<img src="img/icon/fb.png">
+						<p>Facebook</p>
+					</li>
+					<li>
+						<img src="img/icon/ig.png">
+						<p>Intagram</p>
+					</li>
+					<li>
+						<img src="img/icon/yt.png">
+						<p>Youtube</p>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="ft-content">
+			<div class="ft-bd">
+				<input type="checkbox" id="ft-service" name="ft-service">
+				<label for="ft-service">Dịch vụ của chúng tôi</label>
+				<ul class="ft-service">
+					<li>Khách sạn</li>
+					<li>Tours</li>
+					<li>Hội nghị / Sự kiện</li>
+					<li>Nhà hàng / Bar</li>
+				</ul>
+			</div>
+			
+			<div class="ft-s">
+				<label>Đăng ký ngay để nhận thông tin mới nhất!</label>
+				<div>
+					<div class="ft-tx">
+						<input type="text" name="" placeholder="Nhập email của bạn ...">
+					</div>
+					<div class="ft-bt">
+						<div type="submit"><img src="img/icon/send.png"></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="copyright">
+		<div class="copyright-left">
+			<span>Copyright© 2022 <b>HnN TRAVEL</b>. All rights reserved.  </span>
+		</div>
+		<div class="copyright-right">
+			<span>Designed and Maintained by</span><img src="img/dana.png">
+		</div>
+	</div>
+	</div>
+</section>
 </body>
 </html>
